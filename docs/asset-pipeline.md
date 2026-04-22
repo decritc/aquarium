@@ -34,6 +34,8 @@ assets/
 - `model.glb` for the primary runtime model
 - `metadata.json` for gameplay and rendering metadata
 - Additional textures or source files can live alongside runtime assets if needed
+- The intended artist workflow is "drop in a GLB plus metadata JSON" so new fish
+  can be added after release with minimal code changes
 
 ## Metadata responsibilities
 
@@ -57,6 +59,9 @@ Use `schemas/fish-model.schema.json` to validate fish metadata files.
 - Prefer explicit units for measurements
 - Keep descriptive text player-facing and concise
 - Avoid baking game balance values into filenames
+- Assume Meshy AI or similar tools may be used during model generation, so runtime
+  validation should focus on predictable export contracts instead of tool-specific
+  assumptions
 
 ## Future expansion
 

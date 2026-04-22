@@ -12,12 +12,18 @@ Players manage one or more aquariums populated with animated 3D fish.
 
 The experience supports:
 
-- **Breeder career mode** with a starting bankroll, progression, and economy
+- **Breeder career mode** with limited starting capital, progression, and economy
 - **Sandbox mode** for freeform tank design and fish experimentation
 - **Observer mode** so visitors can view public aquariums created by other users
 - **Freshwater and saltwater tanks**
 - **Fish breeding and tank design**
 - **Idle/simulation gameplay** with optional acceleration through monetization
+
+The product direction is intentionally mode-dependent:
+
+- **Sandbox mode** emphasizes creativity and low friction
+- **Career mode** emphasizes breeding strategy and business management
+- **Observer mode** emphasizes social discovery and public aquarium browsing
 
 ## Repository layout
 
@@ -36,12 +42,13 @@ The experience supports:
 - `docs/economy-and-progression.md` - money, premium currency, and progression model
 - `docs/technical-foundation.md` - recommended implementation direction for agents
 - `docs/asset-pipeline.md` - how 3D fish assets and metadata should be organized
-- `docs/open-questions.md` - decisions to make together before implementation
+- `docs/founder-decisions.md` - accepted answers to the initial design questionnaire
+- `docs/open-questions.md` - decisions still unresolved or intentionally deferred
 
 ## Next steps
 
-1. Refine the core game loop and player fantasy.
-2. Define the fish genetics and breeding depth.
-3. Confirm the technical stack for the browser client and backend.
+1. Convert the founder decisions into concrete species, tank, and progression specs.
+2. Define the first implementation milestone in enough detail to build it.
+3. Design the fish genetics system as a layered system that can grow over time.
 4. Add early concept assets and example fish metadata JSON files.
-5. Decide what the smallest playable milestone should be.
+5. Choose the initial runtime stack for rendering, simulation, and backend services.

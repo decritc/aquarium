@@ -6,19 +6,33 @@ This document defines the product vision and first-pass design for a browser-bas
 virtual aquarium game. It is intended to guide future implementation agents so
 they can build the game in phases with a shared understanding of the experience.
 
-This is a living document. Unknowns and decisions that need user input should be
-tracked in `docs/open-questions.md`.
+This is a living document. Confirmed founder decisions are tracked in
+`docs/founder-decisions.md`, while remaining unknowns should be tracked in
+`docs/open-questions.md`.
 
 ## Vision
 
-Create a relaxing but strategically rich aquarium simulation where players collect,
-design, breed, and showcase animated 3D fish in beautiful tanks.
+Create a mode-driven aquarium platform where players can either design, breed, or
+observe animated 3D fish aquariums in the browser, with each mode emphasizing a
+different player fantasy.
 
-The game should support three complementary player fantasies:
+The game should support three complementary player fantasies, selected primarily
+through game mode:
 
-1. **Aquarium artist** - design visually impressive tanks
-2. **Fish breeder** - build a profitable operation through genetics and progression
-3. **Observer/visitor** - explore and admire aquariums built by others
+1. **Aquarium artist** - design visually impressive tanks in sandbox mode
+2. **Fish breeder** - build a profitable operation through genetics and progression in career mode
+3. **Observer/visitor** - explore and admire aquariums built by others in observer mode
+
+## Mode-driven product strategy
+
+The primary fantasy depends on the user's selected mode rather than a single
+global product identity.
+
+- **Sandbox mode** prioritizes creativity, low friction, and presentation.
+- **Career mode** prioritizes breeding strategy, economy, and long-term planning.
+- **Observer mode** prioritizes social discovery and ambient viewing.
+
+This principle should guide UX, monetization, progression rules, and difficulty.
 
 ## Experience pillars
 
@@ -30,18 +44,20 @@ the aquarium enjoyable to watch.
 
 ### 2. Meaningful progression
 
-Career mode should reward long-term planning. Players start small, gradually earn
-more money, unlock better fish and equipment, and improve their breeding program.
+Career mode should reward long-term planning. Players start with constrained
+capital, gradually earn more money, unlock better fish and equipment, and improve
+their breeding program.
 
 ### 3. Creative expression
 
 Players should be able to create tanks with different themes, decorations, layouts,
- and species mixes within tank rules and habitat compatibility constraints.
+and species mixes within tank rules and habitat compatibility constraints.
 
 ### 4. Social visibility
 
 Public aquariums should be easy to browse. Observer mode should make it rewarding
-to visit tanks created by other players and potentially follow favorite creators.
+to visit tanks created by other players through viewing, likes, follows, comments,
+and curated discovery.
 
 ### 5. Low-pressure simulation
 
@@ -52,12 +68,12 @@ experimentation more than punishing micromanagement.
 
 ## 1. Breeder career mode
 
-This is the main progression mode.
+Career mode is the main progression and economy mode.
 
 Player starts with:
 
 - A small bankroll
-- A starter tank
+- A starter tank or enough capital to choose how to allocate early spending
 - A limited catalog of fish and decorations
 - Basic water-quality and habitat tools
 
@@ -67,19 +83,26 @@ Player goals:
 - Create tanks that meet species needs
 - Breed fish with desirable traits
 - Sell fish for profit
-- Expand into additional tanks
+- Expand into additional tanks when financially viable
 - Unlock new species, decorations, and systems
 
 Core pressure:
 
-- Limited starting funds
+- Limited starting funds across tank purchases, livestock, and decor choices
 - Habitat constraints
 - Breeding cooldowns and maturity time
 - Gradual unlocking of premium fish and larger tank options
 
+Career play should allow multiple viable strategies:
+
+- conservative single-tank design-first play
+- aggressive breeder-first multi-tank play
+- balanced play focused on aesthetics plus profitability
+
 ## 2. Sandbox mode
 
-Sandbox is a creative mode with fewer or no economy constraints.
+Sandbox is a creative mode with fewer economy constraints and a lower barrier to
+entry than career mode.
 
 Likely features:
 
@@ -88,6 +111,18 @@ Likely features:
 - Change tank parameters quickly
 - Build showcase aquariums
 - Optionally share public tanks for observer mode
+
+Guest or no-account sandbox should allow:
+
+- one aquarium
+- a curated starter set of fish and decor assets
+- prompts to upgrade for more tanks, more assets, and persistence features
+
+Account-backed sandbox can unlock:
+
+- more tank slots
+- more asset libraries
+- more persistent showcase features
 
 This mode is useful for players who want expression without progression pressure.
 
@@ -101,13 +136,15 @@ First-pass observer features:
 - View tank name, owner, theme, species list, and summary stats
 - Watch fish behavior in real time or near-real time
 - View featured/popular/recent aquariums
+- Like or favorite tanks
+- Follow creators
+- Leave comments subject to moderation rules
 
 Later possibilities:
 
-- Likes or favorites
-- Following creators
 - Ranked showcases
 - Event tanks or contests
+- Curator picks and editorial collections
 
 ## Target audience
 
@@ -178,8 +215,9 @@ To support breeding gameplay, fish should eventually have multiple trait layers:
 
 ### First-pass breeding goals
 
-The breeding system should be deep enough to create player goals without becoming
-opaque or spreadsheet-heavy.
+The breeding system should start readable and expand over time. The first versions
+should favor clarity over simulation depth, with room to grow toward deeper
+genetics later.
 
 Candidate outcomes from breeding:
 
@@ -188,6 +226,18 @@ Candidate outcomes from breeding:
 - Improved hardiness
 - Faster growth or fertility
 - Collector-value lineage combinations
+
+### Hybridization policy
+
+The default expectation should be realism. Hybridization may be supported across
+closely related species where it makes sense, with a few curated exceptions for
+surprise or easter-egg content.
+
+### Lineage visibility
+
+Fish should retain pedigree/history suitable for advanced players and collectors.
+This information should be accessible, but not forced into the primary UX whenever
+fish are born or acquired.
 
 ## Economy overview
 
@@ -211,6 +261,8 @@ Guidelines:
 - Premium currency should accelerate progression, not invalidate it
 - Purchases should favor convenience, cosmetics, or time-saving
 - Sandbox should remain enjoyable without spending
+- Monetization should account for hosting, storage, and scaling costs without
+  turning progression into a hard paywall
 
 ## Content progression
 
@@ -225,7 +277,23 @@ Suggested unlock vectors:
 
 ## Simulation assumptions
 
-Initial implementation should likely simplify realism in favor of clarity.
+Initial implementation should aim for semi-realistic aquarium behavior presented in
+a clear, readable way. It should feel authentic enough for experienced hobbyists
+without overwhelming casual players.
+
+### Adaptive difficulty director
+
+Career mode should eventually include an adaptive "director" layer that tunes
+challenge and assistance based on player behavior. The goal is to keep the game
+fun and tense without pushing players into unwinnable states too easily.
+
+Director responsibilities may include:
+
+- detecting whether a player is casual, design-oriented, or optimization-focused
+- softening failure spirals before bankruptcy
+- surfacing realistic challenges for advanced players
+- nudging toward sustainable play without fully removing consequences
+- tuning tips, events, and warning thresholds to match player skill
 
 Recommended early simulation layers:
 
@@ -235,6 +303,7 @@ Recommended early simulation layers:
 - Tank suitability score
 - Passive earnings/value generation
 - Basic compatibility rules
+- Bounded offline catch-up
 
 Defer deeper realism unless it strengthens gameplay:
 
@@ -253,29 +322,30 @@ Candidate first version:
 - Public aquarium page
 - Public owner profile summary
 - Featured tank feed
+- Likes
+- Follows
+- Comments
+- Search by owner, tags, species, and popularity
 
 ## Live operations opportunities
 
 Potential future content cadence:
 
-- Limited-time species
 - Seasonal decorations
-- Breeding events
-- Showcase challenges
-- Daily or weekly goals
+- light seasonal showcases
 
 ## Proposed first playable milestone
 
 The smallest meaningful playable version should likely include:
 
-1. Account creation/sign-in
-2. One playable freshwater breeder tank
-3. A small set of fish species
-4. Buy/place fish and decorations
-5. Fish idle movement
-6. Basic breeding and offspring generation
-7. Sell fish for soft currency
-8. Public sharing for a single tank
+1. Desktop web delivery
+2. One guest-accessible sandbox tank with a curated asset set
+3. GLB-based fish model loading with metadata-driven configuration
+4. A small set of freshwater fish species
+5. Buy/place fish and decorations in at least one mode
+6. Fish idle movement
+7. Basic breeding and offspring generation for career mode
+8. Public sharing for a single opt-in tank
 
 ## Risks to manage
 
@@ -284,6 +354,7 @@ The smallest meaningful playable version should likely include:
 - Idle simulation needing server support for offline progression
 - Social/public viewing increasing backend complexity significantly
 - Monetization design undermining the relaxing tone
+- Adaptive difficulty becoming opaque or manipulative if not explained carefully
 
 ## Product principles for future agents
 
@@ -292,3 +363,5 @@ The smallest meaningful playable version should likely include:
 - Keep content data-driven where possible
 - Separate simulation rules from presentation
 - Treat fish assets and metadata as a formal pipeline, not ad hoc files
+- Design per-mode experiences intentionally instead of forcing one ruleset across
+  all players

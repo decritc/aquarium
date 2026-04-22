@@ -1,57 +1,69 @@
 # Open Questions
 
-This file tracks product decisions to resolve before implementation becomes deep or
-costly to change.
+This file now tracks the remaining decisions that still need refinement after the
+first founder questionnaire was answered. Confirmed decisions are recorded in
+`docs/founder-decisions.md`.
 
-## Product direction
+## Product and mode design
 
-1. Is the primary fantasy closer to:
-   - a relaxing aquarium creator,
-   - a fish genetics and breeding sim,
-   - a tycoon/economy game,
-   - or a social showcase game?
-2. Should players manage a single flagship aquarium first, or unlock multiple tanks
-   early?
-3. Should observer mode be passive only, or include likes, follows, comments, or
-   curated featured tanks?
+1. For guest sandbox users, how large should the free asset catalog be at launch?
+2. Should guests be able to save and return to their sandbox aquarium, or is that
+   an account-only feature?
+3. In career mode, should players begin with one starter tank plus optional extra
+   tank purchases, or should all tanks be purchased manually from the beginning?
+4. Should observer interactions such as likes, follows, and comments be available
+   immediately, or unlocked in phases after simple public browsing works well?
 
-## Progression and economy
+## Adaptive challenge and AI director
 
-1. How punishing should incompatible fish care be in breeder mode?
-2. Should fish die permanently from neglect, or should the game prefer softer
-   consequences such as sickness, fertility loss, or lower value?
-3. What is the desired balance between:
-   - decoration and creativity,
-   - fish breeding strategy,
-   - and financial optimization?
-4. How strong should the premium acceleration loop be relative to the idle baseline?
+1. How visible should the AI director be to the player?
+   - Hidden system only
+   - Exposed through advisor-style messaging
+   - Exposed through difficulty profiles
+2. What knobs should the director be allowed to adjust?
+   - Market prices
+   - Maintenance costs
+   - Random events
+   - Contract opportunities
+   - Breeding odds
+   - Tutorial/intervention hints
+3. Should the director ever allow fish death in order to preserve realism for
+   expert players, or should it always bias toward softer failure states?
 
-## Fish design depth
+## Progression and monetization
 
-1. How realistic should species behavior and care requirements be?
-2. Should breeding use:
-   - simple trait rarity tables,
-   - authored pattern inheritance rules,
-   - or a more simulation-heavy genetics system?
-3. Should hybridization across closely related fish be possible?
-4. Will fish have named lineages and pedigrees visible to players?
+1. What should the first paid upgrade path be for guest sandbox users:
+   - Ad removal
+   - Premium asset pack
+   - More tank slots
+   - Full account upgrade bundle
+2. Should career-mode currency purchases be tightly capped to preserve pacing, or
+   left mostly open-ended?
+3. Should cosmetic monetization focus first on:
+   - decorations,
+   - lighting/background themes,
+   - profile/showcase presentation,
+   - or all of the above?
 
-## Social and content scope
+## Fish systems and content
 
-1. Are aquariums public by default, private by default, or player-selectable?
-2. Should public aquariums be searchable by tags, fish species, rating, or owner?
-3. Will we eventually support seasonal events, daily shop rotations, or community
-   competitions?
+1. What is the first freshwater starter roster?
+2. When should saltwater unlock in career mode?
+3. Which hybridization exceptions should exist beyond strict realism?
+4. How much pedigree detail should be visible on the standard fish card before the
+   player opens a deeper lineage view?
 
 ## Technical decisions
 
-1. Do you want us to target desktop web first, or responsive mobile web from the
-   beginning?
-2. Are you open to a TypeScript monorepo with:
-   - a React-based client,
-   - a lightweight API/backend,
-   - and shared simulation/content packages?
-3. Should the simulation continue progressing while the player is offline, and if
-   so, how exact should offline catch-up be?
-4. Will fish models arrive in glTF/GLB format, or do you expect a different 3D
-   format?
+1. Should the server begin in TypeScript and only move performance-critical logic
+   to Rust/WASM later, or should we plan for Rust services earlier?
+2. Which frontend systems are most likely to benefit from WASM first:
+   - fish movement/simulation,
+   - genetics calculations,
+   - pathing/flocking,
+   - or asset processing?
+3. For offline progression, what should be exact versus approximated:
+   - earnings,
+   - breeding timers,
+   - fish health,
+   - visitor activity?

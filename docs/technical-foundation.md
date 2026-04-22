@@ -3,6 +3,22 @@
 This document proposes a practical starting architecture for implementing the
 virtual aquarium game in phases.
 
+## Confirmed direction
+
+The current product direction is:
+
+- Desktop web first
+- TypeScript monorepo for shared product logic
+- React-based browser client
+- GLB as the primary runtime fish asset format
+- Offline progression as bounded catch-up instead of exact always-on simulation
+- A mode-driven product structure where sandbox, career, and observer flows have
+  materially different goals and constraints
+
+The founder also noted that the backend may eventually require performance-
+critical services beyond TypeScript and that frontend rendering or simulation may
+benefit from WebAssembly in later phases.
+
 ## Goals
 
 - Support a browser-based aquarium simulation
@@ -33,14 +49,19 @@ This is a recommendation, not a final decision.
 - React Three Fiber or Babylon.js for 3D aquarium rendering
 - Zustand or Redux Toolkit for client state
 - Tailwind CSS or a similar pragmatic UI styling solution
+- Consider WebAssembly selectively for heavy simulation, genetics, or crowd-style
+  fish motion only after profiling shows a clear bottleneck
 
 ### Server
 
-- Node.js with TypeScript
+- Node.js with TypeScript for the first implementation
 - A framework such as Next.js API routes, NestJS, or Fastify
 - PostgreSQL for accounts, ownership, economy state, breeding history, and tank
   configuration
 - Redis for caching and event queues if real-time/public aquarium traffic grows
+- Keep performance-sensitive systems isolated behind service boundaries so they
+  can later be moved to Rust, Go, or another faster runtime if scaling requires
+  it
 
 ### Content and validation
 
@@ -57,10 +78,11 @@ This is a recommendation, not a final decision.
 
 ### Phase 2: Smallest playable sandbox
 
-- Single local aquarium
-- Place fish into a tank
+- Guest-accessible local or lightly persisted sandbox
+- Single aquarium with a curated subset of fish and decorations
 - Render fish swimming on simple loops
 - Basic environment controls
+- Upgrade prompts for expanded asset access and additional tanks
 
 ### Phase 3: Account-backed breeder mode
 
@@ -68,6 +90,7 @@ This is a recommendation, not a final decision.
 - Persistent tanks
 - Basic currency and shop
 - Fish purchasing and resale
+- Multiple-tank strategy under constrained starting capital
 
 ### Phase 4: Breeding and genetics
 
@@ -79,7 +102,8 @@ This is a recommendation, not a final decision.
 
 - Public aquarium profiles
 - Shareable links
-- Featured aquariums and discovery
+- Likes, follows, comments, and discovery surfaces
+- Search across owner, tags, species, and popularity
 
 ### Phase 6: Monetization and live ops
 
@@ -107,6 +131,16 @@ This is a recommendation, not a final decision.
    Offline progress should be computed from timestamps and bounded formulas,
    rather than requiring the simulation to run continuously on the server.
 
+5. **Mode-specific rules over one-size-fits-all design**
+   Sandbox, career, and observer mode should share rendering and content systems
+   where possible, but they should be allowed to differ in economy rules,
+   progression, public visibility, and difficulty tuning.
+
+6. **Adaptive challenge layer**
+   The simulation should allow an AI-director-style balancing layer to adjust
+   pressure, recovery opportunities, and challenge intensity so the game remains
+   fun for both casual decorators and expert breeders.
+
 ## Data domains
 
 - Accounts and authentication
@@ -122,16 +156,19 @@ This is a recommendation, not a final decision.
 - Rendering too many fish in public aquariums on low-end devices
 - Simulation complexity growing faster than content authoring discipline
 - Monetization pressure harming the relaxing tone of the game
-- Asset format drift between 3D models and expected metadata
+- Asset format drift between GLB models and expected metadata
+- AI-director tuning becoming opaque or unfair if not made legible
+- Prematurely overengineering high-performance backend paths before real scale
+  data exists
 
 ## Recommendation for the first implementation milestone
 
-The first milestone should likely be a local sandbox aquarium with:
+The first milestone should likely be a local desktop-web sandbox aquarium with:
 
-- one tank
-- three fish species
-- one environment type
+- one guest sandbox tank
+- a curated subset of fish and decorations
+- freshwater only
 - simple feeding and happiness stats
-- no accounts yet
+- optional upsell hooks for account upgrade and expanded content
 
 That creates a playable visual target without overcommitting to backend systems.
