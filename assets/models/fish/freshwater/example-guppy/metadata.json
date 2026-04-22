@@ -1,0 +1,46 @@
+{
+  "id": "example-guppy",
+  "displayName": "Example Guppy",
+  "scientificName": "Poecilia reticulata",
+  "environment": "freshwater",
+  "speciesGroup": "livebearer",
+  "rarityTier": "common",
+  "temperament": "peaceful",
+  "sources": {
+    "modelAuthor": "placeholder",
+    "notes": "Example metadata contract for future fish assets."
+  },
+  "modelFiles": {
+    "scene": "model.glb",
+    "previewImage": "preview.png"
+  },
+  "animationClips": [
+    {
+      "name": "Swim_Idle",
+      "loop": true,
+      "notes": "Default cruising animation."
+    },
+    {
+      "name": "Swim_Turn_Left",
+      "loop": false
+    },
+    {
+      "name": "Swim_Turn_Right",
+      "loop": false
+    }
+  ],
+  "gameplay": {
+    "minimumTankSizeGallons": 5,
+    "swimSpeed": "medium",
+    "careDifficulty": "easy",
+    "breeding": {
+      "canBreed": true,
+      "gestationOrIncubationHours": 72,
+      "traitPools": ["color", "pattern", "tail-shape"]
+    },
+    "economy": {
+      "basePurchasePrice": 25,
+      "baseSalePrice": 15
+    }
+  }
+}

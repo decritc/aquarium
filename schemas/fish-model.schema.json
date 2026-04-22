@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/fish-model.schema.json",
+  "title": "FishModelMetadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "displayName",
+    "environment",
+    "speciesGroup",
+    "sources",
+    "modelFiles",
+    "animationClips",
+    "gameplay"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "scientificName": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["freshwater", "saltwater", "brackish", "fantasy"]
+    },
+    "speciesGroup": {
+      "type": "string"
+    },
+    "rarityTier": {
+      "type": "string",
+      "enum": ["common", "uncommon", "rare", "epic", "legendary"]
+    },
+    "temperament": {
+      "type": "string",
+      "enum": ["peaceful", "semi-aggressive", "aggressive", "predatory"]
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modelAuthor"],
+      "properties": {
+        "modelAuthor": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "modelFiles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene"],
+      "properties": {
+        "scene": { "type": "string" },
+        "previewImage": { "type": "string" },
+        "materialsDirectory": { "type": "string" }
+      }
+    },
+    "animationClips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "loop"],
+        "properties": {
+          "name": { "type": "string" },
+          "loop": { "type": "boolean" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumTankSizeGallons",
+        "swimSpeed",
+        "careDifficulty",
+        "breeding",
+        "economy"
+      ],
+      "properties": {
+        "minimumTankSizeGallons": {
+          "type": "number",
+          "minimum": 0
+        },
+        "swimSpeed": {
+          "type": "string",
+          "enum": ["slow", "medium", "fast"]
+        },
+        "careDifficulty": {
+          "type": "string",
+          "enum": ["easy", "moderate", "hard", "expert"]
+        },
+        "breeding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["canBreed", "gestationOrIncubationHours"],
+          "properties": {
+            "canBreed": { "type": "boolean" },
+            "gestationOrIncubationHours": {
+              "type": "number",
+              "minimum": 0
+            },
+            "traitPools": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "economy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["basePurchasePrice", "baseSalePrice"],
+          "properties": {
+            "basePurchasePrice": {
+              "type": "number",
+              "minimum": 0
+            },
+            "baseSalePrice": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
