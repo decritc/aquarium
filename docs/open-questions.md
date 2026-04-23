@@ -9,14 +9,15 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 1. For guest sandbox users, how large should the free asset catalog be at launch?
 2. Resolved: guest sandbox should use temporary browser-local save behavior in the
    first implementation rather than full account-backed persistence.
-3. Should observer interactions such as likes, follows, and comments be available
+3. Resolved: tanks marked public should be treated as observable by others.
+4. Should observer interactions such as likes, follows, and comments be available
    immediately, or unlocked in phases after simple public browsing works well?
-4. When should custom backdrop uploads unlock:
+5. When should custom backdrop uploads unlock:
    - account creation,
    - premium purchase,
    - creator/showcase tier,
    - or a later post-launch phase?
-5. Should public tanks with uploaded backdrops require extra moderation or opt-in
+6. Should public tanks with uploaded backdrops require extra moderation or opt-in
    review before they are shareable?
 
 ## Adaptive challenge and AI director

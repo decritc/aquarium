@@ -195,7 +195,7 @@ Key panels or actions:
 - substrate picker
 - edit mode toggle
 - side-view preview
-- share/public toggle for eligible users
+- public/observable toggle for eligible users
 
 Sandbox should feel especially low-pressure, with:
 
@@ -209,6 +209,11 @@ Guest save behavior for the first implementation:
 - allow temporary browser-local persistence for the active guest sandbox
 - do not promise durable cross-device or account-level persistence
 - use account upgrade prompts when the player wants stronger save guarantees
+
+Public-setting rule:
+
+- if a tank is marked public, that means it is observable by other users
+- future share links or public entry points should reflect that observable state
 
 ## 4. Career flow
 

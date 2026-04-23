@@ -119,7 +119,14 @@ Design implication:
 
 Aquariums should be **private by default**.
 
-Players may explicitly choose to share tanks through the UI.
+Players may explicitly choose to make tanks public through the UI.
+
+Definition:
+
+- **public** means the tank is observable by other users through observer-facing
+  surfaces
+- sharing links and featuring/discovery can be layered on top of that public
+  state
 
 ### 13. Public aquarium discovery
 

@@ -130,7 +130,7 @@ Recommended pillars:
 
 First implementation can use:
 
-- one featured public aquarium and its supporting showcase framing
+- one featured observable aquarium and its supporting showcase framing
 - “coming soon” founder/devlog proof
 - process or craft-oriented messaging
 

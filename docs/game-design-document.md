@@ -168,7 +168,8 @@ This mode is useful for players who want expression without progression pressure
 
 ## 3. Observer mode
 
-Observer mode allows visitors to view public aquariums from other accounts.
+Observer mode allows visitors to view aquariums that other users have marked as
+public, meaning observable by others.
 
 First-pass observer features:
 
