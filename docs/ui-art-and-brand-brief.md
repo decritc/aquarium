@@ -203,10 +203,10 @@ The UI should support long viewing sessions.
 
 ### Base palette goals
 
-- soft aquas and teals
+- soft aquas and teals as the dominant family
+- coral as the main secondary accent
 - warm cream/sand/light neutral accents
 - deep navy/ink for contrast
-- selective coral/gold accents for warmth and rewards
 
 ### Suggested palette roles
 
@@ -216,6 +216,20 @@ The UI should support long viewing sessions.
 - **Deep contrast**: inky navy
 - **Success/healthy**: sea-green
 - **Warning**: warm amber, not harsh alarm red by default
+
+### Palette emphasis decision
+
+Current preferred direction:
+
+- aqua/teal should be the dominant brand read
+- coral should act as the secondary warmth/accent color
+- navy and cream should support readability and premium contrast
+
+Design intent:
+
+- the palette should read "living aquarium" first
+- the palette should still feel warm and cozy rather than cold-only
+- coral should add life, reward, and friendliness without overtaking the aquatic identity
 
 Avoid:
 

@@ -300,6 +300,18 @@ Design intent:
 - add just enough custom detail to feel ownable and brand-specific
 - avoid drifting into novelty cartoon lettering or hard-tech typography
 
+### 28. Brand palette should be aqua/teal dominant with coral secondary
+
+The core palette should lean primarily on **aqua/teal** with **coral** as the
+main secondary accent.
+
+Design intent:
+
+- reinforce the living-aquarium fantasy immediately
+- keep the interface calming and aquatic first
+- allow warmth and premium contrast through selective coral accents
+- avoid palettes that feel either too cold/clinical or too loud/gacha-like
+
 ## Key implementation implications
 
 1. Build the product around distinct mode entry points rather than one unified
