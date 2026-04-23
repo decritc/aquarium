@@ -126,9 +126,12 @@ Use:
 
 - favor a clean iconic silhouette
 - the current preferred direction is a **hybrid of fish + tank/water**
+- the fish should remain the dominant read
+- the main supporting cue should be a **curved tank-glass frame**
 - the mark should suggest both:
   - a living fish or tail/silhouette cue, and
-  - an aquarium/water cue such as a glass curve, waterline, ripple, or caustic arc
+  - an aquarium/water cue led first by a glass curve, with waterline/ripple ideas only
+    as supporting exploration
 - subtle aquatic motifs are good
 - keep it simple enough to survive small sizes
 - prioritize one cohesive hybrid symbol over a collage of separate icons
@@ -136,7 +139,7 @@ Use:
 Preferred exploration directions:
 
 1. fish tail integrated into a tank-glass curve
-2. fish silhouette crossing a subtle waterline
+2. fish silhouette framed by a rounded tank/window curve
 3. a rounded tank/window shape with an embedded fish-motion sweep
 4. a pearl/ripple accent only if it remains secondary to the fish+tank identity
 
@@ -146,6 +149,7 @@ Avoid:
 - hyper-generic wave swooshes
 - pure abstract water marks with no fish/aquarium connection
 - fish-only mascots that lose the aquarium identity
+- water/ripple motifs that overpower the fish read
 - unreadable script lettering
 
 ## 2. Typography direction

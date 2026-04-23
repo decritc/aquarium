@@ -277,6 +277,17 @@ Implication:
 - logo exploration should prioritize hybrid concepts first
 - avoid drifting into generic wave marks or overly detailed fish illustrations
 
+### 26. Logo emphasis should be fish-forward with aquarium framing support
+
+Within that hybrid approach, the mark should emphasize the **fish silhouette first**,
+with the **curved tank-glass frame** acting as the strongest supporting cue.
+
+Design intent:
+
+- the fish should carry the emotional recognition
+- the tank-glass cue should make the icon feel unmistakably aquarium-specific
+- avoid over-relying on generic ripple/wave symbolism
+
 ## Key implementation implications
 
 1. Build the product around distinct mode entry points rather than one unified
