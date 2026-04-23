@@ -84,6 +84,7 @@ This is a recommendation, not a final decision.
 - Single aquarium with a curated subset of fish and decorations
 - Render fish swimming on simple loops in a fixed side-view tank
 - Basic environment controls, backdrop selection, and substrate choice
+- Free-rotation edit mode with quick top/side/front snaps for placement review
 - Authored decor placement rules for heavy, floating, rooted, and mounted items
 - Visible algae/cleanliness state
 - Upgrade prompts for expanded asset access and additional tanks
@@ -131,21 +132,26 @@ This is a recommendation, not a final decision.
    depth, allowing 3D fish and decor to feel dimensional without requiring a
    free-look camera.
 
-4. **Client prediction where safe**
+4. **Editing camera is not the presentation camera**
+   The placement/editing experience should support free orbit plus quick angle
+   snaps so players can judge decor scale, terrain shape, and front/back depth
+   before returning to the primary side-view aquarium presentation.
+
+5. **Client prediction where safe**
    Non-economy actions may feel immediate on the client, but authoritative
    economy and breeding outcomes should be server-backed once multiplayer/public
    persistence exists.
 
-5. **Graceful idle progression**
+6. **Graceful idle progression**
    Offline progress should be computed from timestamps and bounded formulas,
    rather than requiring the simulation to run continuously on the server.
 
-6. **Mode-specific rules over one-size-fits-all design**
+7. **Mode-specific rules over one-size-fits-all design**
    Sandbox, career, and observer mode should share rendering and content systems
    where possible, but they should be allowed to differ in economy rules,
    progression, public visibility, and difficulty tuning.
 
-7. **Adaptive challenge layer**
+8. **Adaptive challenge layer**
    The simulation should allow an AI-director-style balancing layer to adjust
    pressure, recovery opportunities, and challenge intensity so the game remains
    fun for both casual decorators and expert breeders.

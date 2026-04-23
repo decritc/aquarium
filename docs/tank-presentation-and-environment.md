@@ -23,10 +23,33 @@ editing tool than the side-view alone can provide.
 Recommended rule:
 
 - **viewing mode** stays side-on and presentation-focused
-- **placement mode** can switch to a top-down planning view for layout and spacing
+- **placement mode** supports free rotation/orbit around the tank for inspection and
+  placement
+- **placement mode** should also provide quick snap views such as top, front, and side
+  to help players judge spacing, height, and silhouette
 
-This should not be treated as a contradiction. The top-down view exists to author
-depth placement; the side-view remains the primary player-facing aquarium view.
+This should not be treated as a contradiction. Editing is allowed to be more
+tool-like than normal viewing. The side-view remains the primary player-facing
+aquarium view, but editing should let players inspect the tank from whatever angle
+is needed to place large objects, terrain, or layered decor confidently.
+
+### Editing camera expectations
+
+Editing camera should support:
+
+- free orbit around the tank
+- zoom in/out
+- snap to top view for footprint planning
+- snap to side view for silhouette and height checks
+- quick return to the standard presentation view
+
+Examples:
+
+- placing a castle should allow the player to inspect footprint from above and final
+  silhouette from the side
+- placing terrain should allow the player to rotate around hills and valleys before
+  confirming the layout
+- placing tall plants or rear hardscape should allow front/back occlusion checks
 
 ## Visual style target
 
@@ -98,13 +121,14 @@ Use authored placement behavior rather than full simulation:
 
 This gives players expected behavior without expensive general-purpose physics.
 
-The top-down editor should make these behaviors visible through:
+The editor should make these behaviors visible through:
 
 - item footprints
 - front/back depth occupancy
 - collision outlines
 - snap previews
-- optional side-preview confirmation
+- side-preview confirmation
+- free-rotation inspection before confirming placement
 
 ## Tank types and archetypes
 

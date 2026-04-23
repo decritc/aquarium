@@ -40,6 +40,8 @@ The product direction is intentionally mode-dependent:
 
 - `docs/game-design-document.md` - core product and system design
 - `docs/tank-simulation-spec.md` - first-pass simulation rules, metrics, and placement-mode model
+- `docs/ui-flows.md` - primary app navigation and player flow planning
+- `docs/tank-editor-ux.md` - tank editor camera, placement, and inspection UX
 - `docs/economy-and-progression.md` - money, premium currency, and progression model
 - `docs/technical-foundation.md` - recommended implementation direction for agents
 - `docs/asset-pipeline.md` - how 3D fish assets and metadata should be organized
@@ -51,7 +53,7 @@ The product direction is intentionally mode-dependent:
 
 ## Next steps
 
-1. Finalize the first implementation milestone and narrow it to the minimum useful UI flows.
+1. Turn the current simulation and UI planning into an exact first playable milestone spec.
 2. Design the fish genetics system as a layered system that can grow over time.
 3. Add more starter content files and validate them against the schemas.
 4. Add early concept assets and example fish metadata JSON files.

@@ -12,17 +12,19 @@ simulation loop without inventing core rules from scratch.
 - Make fish, decor, substrate, and equipment all matter to outcomes
 - Make cleanup species and maintenance support meaningful without replacing the player
 - Support a calm simulation that still rewards planning and good stocking choices
-- Ensure top-down placement mode can author a tank with meaningful depth and footprint
+- Ensure edit mode can author a tank with meaningful depth, footprint, height,
+  and terrain shape
 
 ## Core design principle
 
 The player **views** the tank from a stable side angle, but **edits** the tank in
-placement mode with a top-down planning view when needed.
+placement mode with a freely rotatable camera and snap views when needed.
 
 This gives the game both:
 
 - the visual clarity of a side-view aquarium
-- the authoring clarity of a layout tool that can reason about front/back depth
+- the authoring clarity of a 3D editor that can reason about front/back depth,
+  height, footprint, and terrain shape
 
 ## Camera versus editing modes
 
@@ -37,18 +39,20 @@ This gives the game both:
 
 Placement mode should support:
 
-- top-down tank layout view
-- visible front-to-back depth grid or lanes
+- free orbit/rotation around the tank
+- quick snap views for top, side, front, and angled perspectives
+- visible front-to-back depth occupancy
 - item footprints and collision outlines
 - snapping behaviors based on item type
 - quick return to side-view preview
 
 Recommended editor affordances:
 
-- top-down grid overlay
-- front/mid/back depth bands
+- orbit camera with constrained zoom bounds
+- snap-to-top, snap-to-side, and snap-to-isometric buttons
 - tank wall boundaries and equipment slots
 - footprint highlights for blocked versus valid placement
+- terrain contour or height visualization where relevant
 - optional side preview panel so players can check composition while placing
 
 ## Tank coordinate model
@@ -309,11 +313,12 @@ Items should expose authored placement behavior:
 - mounted items snap to allowed surfaces or slots
 - backdrop items never collide with gameplay decor
 
-### Top-down placement requirements
+### Placement-mode requirements
 
 Each placeable item should support enough metadata for editor mode to show:
 
-- top-down footprint width/depth
+- floor footprint width/depth
+- height/vertical presence
 - optional rotation
 - depth occupancy
 - collision blocking
@@ -322,7 +327,7 @@ Each placeable item should support enough metadata for editor mode to show:
 This is why item data should be authored for both:
 
 - side-view readability
-- top-down editing logic
+- free-rotation editing logic
 
 ## Substrate and planting model
 
@@ -436,8 +441,10 @@ Suggested player-facing views:
 
 ## Implementation guidance for future agents
 
-- Do not require orbit-camera editing to support depth placement.
-- Support top-down placement mode as the canonical way to place depth-layered decor.
 - Keep the side-view tank as the main identity of the game.
+- Treat edit mode as a dedicated 3D inspection and placement workflow, not just a
+  top-down planner.
+- Support free rotation plus quick snap views so players can inspect castles,
+  terrain, driftwood, and vertical decor before confirming placement.
 - Use authored rules and bounded drift before attempting full ecosystem simulation.
 - Expose the consequences of poor compatibility visually and systemically.

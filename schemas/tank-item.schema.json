@@ -125,6 +125,37 @@
         }
       }
     },
+    "editor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "supportsRotation": {
+          "type": "boolean"
+        },
+        "rotationAxes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["x", "y", "z"]
+          },
+          "uniqueItems": true
+        },
+        "preferredInspectionViews": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["orbit", "top", "side", "front", "isometric"]
+          },
+          "uniqueItems": true
+        },
+        "terrainAware": {
+          "type": "boolean"
+        },
+        "allowHeightAdjustment": {
+          "type": "boolean"
+        }
+      }
+    },
     "effects": {
       "type": "object",
       "additionalProperties": false,

@@ -442,7 +442,7 @@ The smallest meaningful playable version should likely include:
 3. GLB-based fish model loading with metadata-driven configuration
 4. A small set of freshwater fish species
 5. Built-in background selection and substrate selection
-6. Top-down placement mode for depth-aware layout authoring
+6. Free-rotation edit mode with snap views for top, side, and orbit inspection
 7. Buy/place fish and decorations in at least one mode
 8. Fish idle movement with authored species behavior differences
 9. Visible cleanliness or algae state
@@ -465,6 +465,6 @@ The smallest meaningful playable version should likely include:
 - Keep content data-driven where possible
 - Separate simulation rules from presentation
 - Treat fish assets and metadata as a formal pipeline, not ad hoc files
-- Treat top-down placement as an editing tool in service of the side-view aquarium presentation
+- Treat free-rotation edit mode and snap views as editing tools in service of the side-view aquarium presentation
 - Design per-mode experiences intentionally instead of forcing one ruleset across
   all players
