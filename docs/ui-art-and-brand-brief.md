@@ -139,6 +139,8 @@ Use:
 - favor a clean iconic silhouette
 - the current preferred direction is a **hybrid of fish + tank/water**
 - the fish should remain the dominant read
+- at favicon/app-icon size, the strongest read should come from the **tail and motion
+  silhouette** rather than a literal fish head/profile
 - the main supporting cue should be a **curved tank-glass frame**
 - the mark should suggest both:
   - a living fish or tail/silhouette cue, and
@@ -154,6 +156,12 @@ Preferred exploration directions:
 2. fish silhouette framed by a rounded tank/window curve
 3. a rounded tank/window shape with an embedded fish-motion sweep
 4. a pearl/ripple accent only if it remains secondary to the fish+tank identity
+
+Small-size emphasis:
+
+- prioritize a tail-led or motion-led silhouette that still reads as elegant fish form
+- avoid compositions that depend on tiny face detail or fin micro-shapes to be legible
+- make sure the icon still reads clearly at favicon and app-icon sizes
 
 Avoid:
 

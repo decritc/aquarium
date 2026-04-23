@@ -288,7 +288,19 @@ Design intent:
 - the tank-glass cue should make the icon feel unmistakably aquarium-specific
 - avoid over-relying on generic ripple/wave symbolism
 
-### 27. Wordmark should be rounded and custom, not generic
+### 27. Small-size icon read should favor tail and motion
+
+At favicon/app-icon scale, the mark should emphasize the **fish tail / motion
+silhouette** more strongly than a static fish head or body mass.
+
+Design intent:
+
+- keep the icon elegant and dynamic at small sizes
+- preserve the feeling of a living aquarium rather than a static mascot
+- pair naturally with the curved tank-glass support cue
+- improve memorability through motion-driven shape language
+
+### 28. Wordmark should be rounded and custom, not generic
 
 The wordmark should use a **clean rounded base with subtle custom aquarium
 character**.
@@ -300,7 +312,7 @@ Design intent:
 - add just enough custom detail to feel ownable and brand-specific
 - avoid drifting into novelty cartoon lettering or hard-tech typography
 
-### 28. Brand palette should be aqua/teal dominant with coral secondary
+### 29. Brand palette should be aqua/teal dominant with coral secondary
 
 The core palette should lean primarily on **aqua/teal** with **coral** as the
 main secondary accent.
