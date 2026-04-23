@@ -245,11 +245,9 @@ These tools are meant for the owner and should not appear in observer mode.
 
 Recommended explore entry points:
 
-- featured tanks
-- trending tanks
-- recent tanks
-- species-based browsing
-- creator search
+- featured aquarium first
+- broader tank discovery later
+- trending/recent/species search as later expansion
 
 Each public tank page should include:
 
@@ -281,6 +279,18 @@ Do not show by default:
 
 Observer mode should feel capable of becoming a relaxing "aquarium screensaver"
 experience.
+
+### First implementation observer entry
+
+For the first implementation, the landing-page CTA `Watch Public Aquariums`
+should open a **single featured aquarium experience** rather than a full gallery.
+
+Why:
+
+- faster to polish to a premium standard
+- easier to market visually
+- lower discovery/backend complexity for the first release
+- still proves the observer fantasy clearly
 
 ## 6. Aquarium screen structure
 

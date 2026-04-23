@@ -35,6 +35,11 @@ relaxing simulation built for the web.
 
 `Watch Public Aquariums`
 
+For the first implementation, this CTA should open a **single featured aquarium
+experience** rather than a full browse grid. That keeps the landing-page flow
+premium and focused while the broader observer/discovery system is still being
+built.
+
 ## Site map for first implementation
 
 The first implementation should support at least these public pages:
@@ -42,7 +47,7 @@ The first implementation should support at least these public pages:
 1. `/` - homepage / landing page
 2. `/sandbox` - sandbox overview page
 3. `/career` - breeder/career overview page
-4. `/observe` - observer mode overview page
+4. `/observe` - featured aquarium / observer mode overview page
 5. `/faq` - FAQ/discoverability page
 
 Optional early pages if capacity allows:
@@ -117,7 +122,7 @@ Recommended pillars:
 
 First implementation can use:
 
-- featured public aquariums
+- one featured public aquarium and its supporting showcase framing
 - “coming soon” founder/devlog proof
 - process or craft-oriented messaging
 
@@ -239,6 +244,7 @@ The marketing site is successful for the first milestone if it includes:
 
 - a polished homepage
 - the primary CTA `Start Free Sandbox`
+- the secondary CTA `Watch Public Aquariums` leading to a strong featured-aquarium destination
 - distinct sections for the three play styles
 - real or approved premium visuals
 - fast, crawlable public pages

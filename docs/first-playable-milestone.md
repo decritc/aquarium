@@ -127,11 +127,21 @@ Camera support in edit mode must include:
 ## 6. Observer placeholder
 
 This milestone does not need the full social observer system, but it should
-include at least one of the following:
+include a **single featured aquarium experience** that acts as the first public
+observer destination.
 
-- a lightweight observer page mock or stub
-- a showcase preview route
-- a read-only "public aquarium style" presentation mode
+Required shape:
+
+- one featured aquarium route or page
+- read-only "public aquarium style" presentation
+- observer-safe minimal HUD
+- enough quality to support landing-page screenshots and CTA handoff
+
+Deferred:
+
+- full gallery or feed
+- search and filters
+- broad creator discovery
 
 This is important because the product will be marketed partly through beautiful
 tank viewing.
@@ -186,7 +196,7 @@ This milestone should include at minimum:
 3. Guest sandbox template picker
 4. Aquarium screen
 5. Tank editor state
-6. Optional observer/showcase placeholder route
+6. Featured aquarium observer route
 
 ## Required player-facing stats
 

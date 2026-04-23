@@ -202,24 +202,32 @@ Important rule:
   undo | redo | side preview | top view | side view | orbit
 ```
 
-## 8. Explore page
+## 8. Featured aquarium page
 
 ```text
 [header]
-  logo | search | filters | account
+  logo | explore | account
 
 [hero strip]
   featured aquarium
+  featured label
 
-[filters row]
-  recent | featured | species | tags | creators
+[main content]
+  [viewport]
+    side-view aquarium
+    minimal observer chrome
 
-[results grid]
-  [tank card]
-    preview image
-    tank title
-    owner
-    top species
+[light info card]
+  tank title
+  owner
+  species summary
+  theme tags
+
+[bottom social strip]
+  like | follow | comment | visit creator
+
+[footer link]
+  explore more aquariums (later)
 ```
 
 ## 9. Marketing site content page template
