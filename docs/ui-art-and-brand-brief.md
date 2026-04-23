@@ -114,6 +114,18 @@ Use:
 - footer
 - social/profile surfaces
 
+Preferred direction:
+
+- a clean rounded sans-serif base
+- subtle custom aquarium character rather than a completely generic font treatment
+- premium and calm first, decorative second
+
+Examples of the kind of customization that could work:
+
+- slight waterline-inspired cut or curve in one letter
+- a softened terminal treatment that echoes glass or ripple forms
+- one distinctive character detail that helps memorability without hurting legibility
+
 ### C. Mark/icon
 
 Use:
@@ -162,6 +174,14 @@ You do not need final font files immediately, but the art direction should assum
 - premium
 - slightly playful
 - readable in large hero sections
+- should work well with a clean rounded wordmark base
+
+### Wordmark style
+
+- clean rounded sans-serif foundation
+- subtle custom aquarium personality
+- readable at header size and favicon/app context when paired with the mark
+- should feel like a premium browser game brand, not a plain SaaS font choice
 
 ### UI/body style
 
@@ -174,6 +194,8 @@ Avoid:
 - hard sci-fi UI fonts
 - novelty “cartoon bubble” fonts
 - ultra-thin luxury fonts that hurt readability
+- overly decorative display fonts as the default wordmark
+- completely generic rounded system-font treatment with no custom identity
 
 ## 3. Color direction
 

@@ -288,6 +288,18 @@ Design intent:
 - the tank-glass cue should make the icon feel unmistakably aquarium-specific
 - avoid over-relying on generic ripple/wave symbolism
 
+### 27. Wordmark should be rounded and custom, not generic
+
+The wordmark should use a **clean rounded base with subtle custom aquarium
+character**.
+
+Design intent:
+
+- maintain strong readability in headers and marketing use
+- feel premium and friendly rather than default-system or purely decorative
+- add just enough custom detail to feel ownable and brand-specific
+- avoid drifting into novelty cartoon lettering or hard-tech typography
+
 ## Key implementation implications
 
 1. Build the product around distinct mode entry points rather than one unified
