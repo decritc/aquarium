@@ -214,6 +214,40 @@ Career mode may expose management aids to the player, including:
 Those tools exist for the owner/operator of the tank and should be hidden or
 significantly reduced when the same tank is viewed publicly.
 
+### 23. Landing-page quality and SEO are top-tier priorities
+
+The public-facing landing page should be treated as a first-class product surface,
+not an afterthought.
+
+Design intent:
+
+- premium visual quality comparable to leading polished creative-tech product sites
+- strong first impression with art direction, motion, and clear value proposition
+- avoid generic, low-effort, or "AI slop" presentation
+- support serious SEO so discovery can happen through search as well as social sharing
+
+Implication:
+
+- landing-page craftsmanship must be part of the core web product plan
+- marketing surfaces should be content-rich, indexable, and visually intentional
+
+### 24. Browser performance is a non-negotiable quality bar
+
+The game should feel smooth and premium in a browser, not like a compromised
+desktop port or a skipping prototype.
+
+Design intent:
+
+- fish should move fluidly and continuously
+- rendering should avoid visible stutter or teleport-like motion
+- browser delivery should still aim for high production quality
+- future implementation should aggressively budget rendering, simulation, and asset delivery
+
+Implication:
+
+- performance work is part of the core architecture, not a late optimization pass
+- rendering and simulation choices must respect browser constraints from the start
+
 ## Key implementation implications
 
 1. Build the product around distinct mode entry points rather than one unified
@@ -226,4 +260,6 @@ significantly reduced when the same tank is viewed publicly.
    a hidden tuning detail.
 5. Design social systems with moderation, privacy, and observer-safe
    presentation from the beginning.
-6. Keep the premium model sustainable without making the experience feel paywalled.
+6. Treat landing-page quality, SEO, and browser performance as core product
+   requirements rather than polish.
+7. Keep the premium model sustainable without making the experience feel paywalled.

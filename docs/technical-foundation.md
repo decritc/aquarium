@@ -14,6 +14,8 @@ The current product direction is:
 - Offline progression as bounded catch-up instead of exact always-on simulation
 - A mode-driven product structure where sandbox, career, and observer flows have
   materially different goals and constraints
+- Professional-quality landing page and SEO are first-class product requirements
+- Browser performance and animation smoothness are first-class technical requirements
 
 The founder also noted that the backend may eventually require performance-
 critical services beyond TypeScript and that frontend rendering or simulation may
@@ -27,6 +29,9 @@ benefit from WebAssembly in later phases.
 - Allow public viewing of selected aquariums
 - Keep content definitions data-driven so new fish can be added without major
   code changes
+- Deliver a premium-quality marketing/landing page that can convert new visitors
+- Keep fish motion and interaction smooth in a web browser rather than accepting
+  choppy "web demo" quality
 
 ## Recommended implementation approach
 
@@ -168,6 +173,16 @@ This is a recommendation, not a final decision.
    should remain hidden from public viewing unless a future explicit creator mode
    allows them to be shown.
 
+11. **Landing page quality is product quality**
+   The marketing and landing experience should be treated as part of the game's
+   core product quality. It should look like a premium, professionally art-
+   directed game site rather than a generic template or AI-generated page.
+
+12. **Performance is a feature, not a post-pass**
+   Smooth fish motion, responsive controls, and stable frame pacing must be part
+   of the initial implementation strategy. The browser target is a constraint to
+   engineer around, not an excuse for low-quality animation or rendering.
+
 ## Data domains
 
 - Accounts and authentication
@@ -188,6 +203,10 @@ This is a recommendation, not a final decision.
 - AI-director tuning becoming opaque or unfair if not made legible
 - Prematurely overengineering high-performance backend paths before real scale
   data exists
+- Shipping a weak landing page that makes the game look low-budget despite strong
+  underlying design
+- Accepting browser frame pacing, stutter, or fish motion jitter that damages the
+  premium feel of the aquarium
 
 ## Recommendation for the first implementation milestone
 

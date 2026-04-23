@@ -57,11 +57,30 @@ Guidelines:
 - avoid making normal play feel tense unless a player explicitly opts into a
   harder director style
 
+### Premium quality bar
+
+The overall product should feel like a premium web game, not a rough prototype
+or low-effort browser toy.
+
+Guidelines:
+
+- landing pages and marketing surfaces should feel polished and intentional
+- visual quality should aim closer to high-end product sites or premium game
+  showcases than to generic template pages
+- avoid "AI slop" aesthetics, weak placeholder art direction, or low-trust
+  promotional surfaces
+- quality expectations apply equally to presentation, animation smoothness,
+  copywriting, and interaction polish
+
 ### Presentation target
 
 The game should present tanks primarily from a fixed side-view camera. Fish and
 decor should still be 3D and depth-aware, but the viewing experience should feel
 like a polished aquarium diorama rather than a free-roam camera simulation.
+
+The browser presentation must also feel smooth and premium. Fish should not
+appear to teleport, stutter, or visibly skip between positions during normal
+play on supported hardware.
 
 ### 2. Meaningful progression
 
@@ -186,6 +205,10 @@ Observer mode should avoid exposing owner-only operational tools such as:
 - owner diagnostics
 - fish health management panels
 - career-specific alerts or business overlays
+
+Landing and explore surfaces should also act as trust-building presentation
+layers for the product. Public-facing pages should look like a serious,
+high-quality game experience.
 
 ## Target audience
 
@@ -521,6 +544,9 @@ The smallest meaningful playable version should likely include:
 9. Visible cleanliness or algae state
 10. Basic breeding and offspring generation for career mode
 11. Public sharing for a single opt-in tank
+12. A polished marketing/landing page that can present the game credibly
+13. Smooth browser animation quality with no obvious movement stepping in normal
+    fish behavior
 
 ## Risks to manage
 
@@ -541,3 +567,5 @@ The smallest meaningful playable version should likely include:
 - Treat free-rotation edit mode and snap views as editing tools in service of the side-view aquarium presentation
 - Design per-mode experiences intentionally instead of forcing one ruleset across
   all players
+- Treat landing-page quality, SEO readiness, and browser performance as
+  first-class product requirements rather than polish for later

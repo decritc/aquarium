@@ -50,6 +50,24 @@ The exact navigation chrome may differ between guest and account users.
 
 ## 1. Landing flow
 
+The landing page is not a throwaway splash screen. It should function as:
+
+- the first trust signal that this is a premium-quality web game
+- the main SEO surface for discovery
+- a polished conversion path into sandbox, observer mode, or account creation
+
+The visual bar should be closer to a premium AI/product landing page than a rushed
+indie placeholder:
+
+- strong hero composition
+- high-quality graphics and tank visuals
+- clear typography hierarchy
+- premium motion restraint
+- no generic or obviously low-quality placeholder art
+
+The goal is to feel professional and intentional, not like AI-generated slop or a
+temporary mockup.
+
 ### Guest landing goals
 
 For a new guest user, the first screen should quickly communicate:
@@ -69,6 +87,13 @@ Secondary content:
 - featured aquariums
 - a short statement of the three play styles
 - a gentle note about account benefits
+
+The landing page should also support:
+
+- search-friendly descriptive page copy
+- clear feature sections for sandbox, career, and observer play
+- visible proof of visual quality through curated screenshots or live tank captures
+- fast page load and high Core Web Vitals performance
 
 ### Account landing goals
 
