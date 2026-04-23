@@ -1,0 +1,106 @@
+{
+  "id": "neon-tetra",
+  "displayName": "Neon Tetra",
+  "scientificName": "Paracheirodon innesi",
+  "classification": {
+    "environment": "freshwater",
+    "climate": "tropical",
+    "speciesGroup": "tetra",
+    "rarityTier": "common"
+  },
+  "habitat": {
+    "minimumTankSizeGallons": 10,
+    "temperatureCelsius": {
+      "min": 20,
+      "max": 26
+    },
+    "phRange": {
+      "min": 6,
+      "max": 7.5
+    },
+    "salinityPpt": {
+      "min": 0,
+      "max": 1
+    },
+    "waterFlow": "low",
+    "tankZone": ["mid"],
+    "minimumGroupSize": 6,
+    "maximumGroupSize": 20,
+    "territorialSpaceGallons": 0.5,
+    "hardscapePreferences": ["plants", "open-swim-space", "driftwood"]
+  },
+  "compatibility": {
+    "temperament": "peaceful",
+    "communitySuitability": "excellent",
+    "withSameSpecies": "schooling",
+    "compatibleSpeciesIds": ["guppy", "corydoras-panda", "otocinclus-affinis"],
+    "incompatibleSpeciesIds": ["betta-splendens"],
+    "incompatibleTraits": [
+      {
+        "trait": "territorial",
+        "reason": "Persistent territorial fish can keep neon tetra schools stressed and scattered."
+      },
+      {
+        "trait": "small-prey",
+        "reason": "Very small tetras should not be housed with fish that may treat them as prey."
+      }
+    ],
+    "notes": "Best kept in peaceful tropical community tanks with enough companions to school."
+  },
+  "behavior": {
+    "activityLevel": "high",
+    "swimSpeed": "medium",
+    "schooling": "tight",
+    "territoriality": "low",
+    "aggressionTriggers": [],
+    "responseProfile": {
+      "defaultState": "calm",
+      "states": [
+        {
+          "when": "school size drops below the recommended minimum",
+          "behavior": "school-tighten",
+          "intensity": "medium",
+          "notes": "Undersized schools should become stressed and cluster tightly."
+        },
+        {
+          "when": "aggressive tankmates are nearby",
+          "behavior": "scatter",
+          "intensity": "high",
+          "notes": "Neon tetras should dart away from harassment rather than fight back."
+        }
+      ]
+    },
+    "feedingStyle": "midwater"
+  },
+  "ecosystem": {
+    "roles": ["schooling-fish"],
+    "contributions": [
+      {
+        "type": "showcase-appeal",
+        "strength": "medium",
+        "notes": "A full school makes a community tank feel alive and polished."
+      }
+    ],
+    "maintenanceNotes": "Neon tetras reward stable peaceful tanks but do not contribute to cleanup directly."
+  },
+  "breeding": {
+    "canBreed": true,
+    "breedingType": "egg-layer",
+    "maturityHours": 720,
+    "gestationOrIncubationHours": 36,
+    "offspringRange": {
+      "min": 10,
+      "max": 60
+    },
+    "traitPools": ["iridescence", "stripe-intensity", "hardiness"]
+  },
+  "economy": {
+    "basePurchasePrice": 12,
+    "baseSalePrice": 7,
+    "upkeepPerDay": 0.5
+  },
+  "assets": {
+    "modelMetadataId": "neon-tetra-default",
+    "icon": "neon-tetra.png"
+  }
+}

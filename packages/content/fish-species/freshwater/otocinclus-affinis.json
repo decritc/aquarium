@@ -1,0 +1,107 @@
+{
+  "id": "otocinclus-affinis",
+  "displayName": "Otocinclus",
+  "scientificName": "Otocinclus affinis",
+  "classification": {
+    "environment": "freshwater",
+    "climate": "tropical",
+    "speciesGroup": "catfish",
+    "rarityTier": "uncommon"
+  },
+  "habitat": {
+    "minimumTankSizeGallons": 15,
+    "temperatureCelsius": {
+      "min": 22,
+      "max": 27
+    },
+    "phRange": {
+      "min": 6,
+      "max": 7.5
+    },
+    "salinityPpt": {
+      "min": 0,
+      "max": 1
+    },
+    "waterFlow": "low",
+    "tankZone": ["lower", "bottom"],
+    "minimumGroupSize": 3,
+    "maximumGroupSize": 8,
+    "territorialSpaceGallons": 1,
+    "hardscapePreferences": ["plants", "driftwood", "open-swim-space"]
+  },
+  "compatibility": {
+    "temperament": "peaceful",
+    "communitySuitability": "excellent",
+    "withSameSpecies": "schooling",
+    "compatibleSpeciesIds": ["guppy", "neon-tetra", "corydoras-panda"],
+    "incompatibleSpeciesIds": ["betta-splendens"],
+    "incompatibleTraits": [
+      {
+        "trait": "territorial",
+        "reason": "Stress-sensitive algae grazers do poorly with persistent harassment."
+      }
+    ],
+    "notes": "Best introduced to mature planted tanks with stable algae and biofilm."
+  },
+  "behavior": {
+    "activityLevel": "moderate",
+    "swimSpeed": "slow",
+    "schooling": "loose",
+    "territoriality": "low",
+    "aggressionTriggers": [],
+    "responseProfile": {
+      "defaultState": "cautious",
+      "states": [
+        {
+          "when": "tank has visible algae surfaces and low aggression",
+          "behavior": "ignore",
+          "intensity": "low",
+          "notes": "Otocinclus should spend much of their time grazing surfaces."
+        },
+        {
+          "when": "aggressive fish invade lower zones",
+          "behavior": "hide",
+          "intensity": "high",
+          "notes": "These fish retreat rather than compete."
+        }
+      ]
+    },
+    "feedingStyle": "grazer"
+  },
+  "ecosystem": {
+    "roles": ["cleanup-crew", "algae-grazer"],
+    "contributions": [
+      {
+        "type": "algae-reduction",
+        "strength": "high",
+        "notes": "Strong algae support once the tank is stable."
+      },
+      {
+        "type": "comfort-boost",
+        "strength": "low",
+        "notes": "Peaceful planted tanks feel more complete with active grazers."
+      }
+    ],
+    "maintenanceNotes": "Cannot replace manual cleaning and should not be used as a fix for extreme neglect."
+  },
+  "breeding": {
+    "canBreed": false,
+    "breedingType": "none",
+    "maturityHours": 0,
+    "gestationOrIncubationHours": 0,
+    "offspringRange": {
+      "min": 0,
+      "max": 0
+    },
+    "traitPools": []
+  },
+  "economy": {
+    "basePurchasePrice": 32,
+    "baseSalePrice": 18,
+    "upkeepPerDay": 1.2
+  },
+  "assets": {
+    "modelMetadataId": "otocinclus-affinis-default",
+    "icon": "otocinclus-affinis.png"
+  }
+}

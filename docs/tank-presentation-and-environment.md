@@ -15,6 +15,19 @@ The game should use a mostly fixed **side-view presentation**:
 
 This keeps the game visually rich while preserving a calmer, more readable UI.
 
+## Placement mode and editing perspective
+
+Because fish and decor use real front-to-back depth, the player needs a clearer
+editing tool than the side-view alone can provide.
+
+Recommended rule:
+
+- **viewing mode** stays side-on and presentation-focused
+- **placement mode** can switch to a top-down planning view for layout and spacing
+
+This should not be treated as a contradiction. The top-down view exists to author
+depth placement; the side-view remains the primary player-facing aquarium view.
+
 ## Visual style target
 
 The tank should behave like a **2.5D aquarium stage**:
@@ -84,6 +97,14 @@ Use authored placement behavior rather than full simulation:
 - **background panels** live in a separate non-colliding backdrop slot
 
 This gives players expected behavior without expensive general-purpose physics.
+
+The top-down editor should make these behaviors visible through:
+
+- item footprints
+- front/back depth occupancy
+- collision outlines
+- snap previews
+- optional side-preview confirmation
 
 ## Tank types and archetypes
 

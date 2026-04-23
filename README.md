@@ -39,18 +39,20 @@ The product direction is intentionally mode-dependent:
 ## Key documents
 
 - `docs/game-design-document.md` - core product and system design
+- `docs/tank-simulation-spec.md` - first-pass simulation rules, metrics, and placement-mode model
 - `docs/economy-and-progression.md` - money, premium currency, and progression model
 - `docs/technical-foundation.md` - recommended implementation direction for agents
 - `docs/asset-pipeline.md` - how 3D fish assets and metadata should be organized
 - `docs/starter-freshwater-plan.md` - first roster, tank archetypes, compatibility, and unlock ladder
+- `docs/starter-item-catalog.md` - starter decor, equipment, substrate, and backdrop catalog
 - `docs/tank-presentation-and-environment.md` - side-view tank presentation and environment simulation rules
 - `docs/founder-decisions.md` - accepted answers to the initial design questionnaire
 - `docs/open-questions.md` - decisions still unresolved or intentionally deferred
 
 ## Next steps
 
-1. Finalize the first freshwater starter roster and progression pacing.
-2. Define the first implementation milestone in enough detail to build it.
-3. Design the fish genetics system as a layered system that can grow over time.
+1. Finalize the first implementation milestone and narrow it to the minimum useful UI flows.
+2. Design the fish genetics system as a layered system that can grow over time.
+3. Add more starter content files and validate them against the schemas.
 4. Add early concept assets and example fish metadata JSON files.
 5. Choose the initial runtime stack for rendering, simulation, and backend services.

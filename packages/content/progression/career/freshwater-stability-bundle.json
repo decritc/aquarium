@@ -1,0 +1,37 @@
+{
+  "id": "freshwater-stability-bundle",
+  "mode": "career",
+  "targetType": "bundle",
+  "targetId": "freshwater-stability-bundle",
+  "unlockType": "level",
+  "requirements": {
+    "minimumPlayerLevel": 2,
+    "requiredUnlockIds": ["freshwater-starter-bundle"],
+    "requiredAccountTier": "free",
+    "notes": "Adds cleanup support fish, planted tools, and better showcase options."
+  },
+  "rewards": {
+    "fishSpeciesIds": ["otocinclus-affinis"],
+    "tankItemIds": [
+      "planted-soil-dark",
+      "anubias-nana",
+      "dark-showcase-panel"
+    ],
+    "featureFlags": ["algae-advisor"],
+    "currencies": [
+      {
+        "currencyId": "credits",
+        "amount": 180
+      }
+    ]
+  },
+  "visibility": {
+    "showInCatalogBeforeUnlock": true,
+    "showUnlockHint": true,
+    "hiddenUntilEligible": false
+  },
+  "monetization": {
+    "isPremiumOption": false,
+    "isGuestUpgradePrompt": false
+  }
+}

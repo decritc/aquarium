@@ -17,20 +17,26 @@ This package will eventually contain structured game data such as:
 packages/content/
   fish-species/
     freshwater/
-      betta.json
+      betta-splendens.json
       guppy.json
-    saltwater/
-      clownfish.json
+      neon-tetra.json
   tank-items/
     decor/
-      river-rocks.json
+      floating-log-hide.json
     equipment/
-      sponge-filter-basic.json
+      basic-sponge-filter.json
     plants/
       java-fern.json
+    substrate/
+      fine-gravel-brown.json
+  tank-backdrops/
+    curated/
+      soft-blue-gradient.json
   progression/
     career/
-      starter-unlocks.json
+      freshwater-starter-bundle.json
+    sandbox/
+      guest-starter-set.json
 ```
 
 The content package should distinguish between:

@@ -1,0 +1,62 @@
+{
+  "id": "anubias-nana",
+  "displayName": "Anubias Nana",
+  "description": "A slow-growing, hardy plant that adds cover without demanding delicate care.",
+  "category": "plant",
+  "tags": ["plant", "freshwater", "tropical", "cover", "hardy"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "requiredHabitatTags": ["plants"],
+    "surface": "midwater",
+    "placementBehavior": "rooted",
+    "footprint": {
+      "widthUnits": 1,
+      "depthUnits": 1,
+      "heightUnits": 2
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1"]
+  },
+  "effects": {
+    "visualThemeTags": ["natural", "planted", "green"],
+    "cleanliness": [
+      {
+        "metric": "algae-growth",
+        "modifier": -1
+      }
+    ],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 3
+      },
+      {
+        "stat": "prestige",
+        "modifier": 2
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "territorial",
+        "modifier": 2
+      },
+      {
+        "tag": "schooling-fish",
+        "modifier": 1
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 22,
+    "salePrice": 10,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/anubias-nana.glb",
+    "thumbnailPath": "assets/models/items/anubias-nana.png"
+  }
+}

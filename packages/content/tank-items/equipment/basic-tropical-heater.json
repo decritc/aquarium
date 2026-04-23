@@ -1,0 +1,60 @@
+{
+  "id": "basic-tropical-heater",
+  "displayName": "Basic Tropical Heater",
+  "description": "A beginner heater for small tropical freshwater aquariums.",
+  "category": "equipment",
+  "tags": ["starter", "heater", "tropical"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "equipment-slot",
+    "placementBehavior": "mounted",
+    "footprint": {
+      "widthUnits": 1,
+      "depthUnits": 1,
+      "heightUnits": 3
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1", "sandbox-starter-bundle"]
+  },
+  "effects": {
+    "tankStats": [
+      {
+        "stat": "temperature-stability",
+        "modifier": 10
+      },
+      {
+        "stat": "comfort",
+        "modifier": 2
+      }
+    ],
+    "environmentRanges": [
+      {
+        "metric": "temperature-celsius",
+        "operation": "set-min-max",
+        "range": {
+          "min": 24,
+          "max": 27
+        }
+      }
+    ],
+    "cleanliness": [
+      {
+        "metric": "maintenance-load",
+        "modifier": 1
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 120,
+    "salePrice": 60,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/basic-tropical-heater.glb",
+    "thumbnailPath": "assets/models/items/basic-tropical-heater.png"
+  }
+}

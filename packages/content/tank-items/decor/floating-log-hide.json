@@ -1,0 +1,55 @@
+{
+  "id": "floating-log-hide",
+  "displayName": "Floating Log Hide",
+  "description": "A floating shelter for surface fish that doubles as a decorative focal point.",
+  "category": "decoration",
+  "tags": ["natural", "betta-friendly", "surface", "hideout"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "free-floating",
+    "placementBehavior": "floating",
+    "footprint": {
+      "widthUnits": 2,
+      "depthUnits": 1,
+      "heightUnits": 1
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1"]
+  },
+  "effects": {
+    "visualThemeTags": ["natural", "wood", "surface-cover"],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 6
+      },
+      {
+        "stat": "prestige",
+        "modifier": 2
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "territorial",
+        "modifier": 5
+      },
+      {
+        "tag": "display-fish",
+        "modifier": 4
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 60,
+    "salePrice": 30,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/floating-log-hide.glb",
+    "thumbnailPath": "assets/models/items/floating-log-hide.png"
+  }
+}

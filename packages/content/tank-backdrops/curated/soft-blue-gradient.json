@@ -1,0 +1,20 @@
+{
+  "id": "soft-blue-gradient",
+  "displayName": "Soft Blue Gradient",
+  "description": "A clean aquarium backdrop suited to modern display and breeder tanks.",
+  "sourceType": "built-in",
+  "themeTags": ["neutral", "clean", "display", "breeder"],
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "allowPublicUse": true,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "imagePath": "assets/backdrops/soft-blue-gradient.png",
+    "focalPoint": "center",
+    "recommendedTankThemes": ["display", "breeder", "minimal"],
+    "supportsColorTint": true
+  }
+}

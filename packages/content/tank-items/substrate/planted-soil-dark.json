@@ -1,0 +1,56 @@
+{
+  "id": "planted-soil-dark",
+  "displayName": "Dark Planted Soil",
+  "description": "A nutrient-rich dark substrate that supports rooted plants and polished showcase tanks.",
+  "category": "substrate",
+  "tags": ["planted", "substrate", "dark", "showcase"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "bottom",
+    "placementBehavior": "free-place",
+    "footprint": {
+      "widthUnits": 12,
+      "depthUnits": 12,
+      "heightUnits": 1
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": false,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-2"]
+  },
+  "effects": {
+    "visualThemeTags": ["planted", "natural", "dark"],
+    "cleanliness": [
+      {
+        "metric": "detritus-buildup",
+        "modifier": -1
+      }
+    ],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 3
+      },
+      {
+        "stat": "prestige",
+        "modifier": 4
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "planted-tank-fish",
+        "modifier": 4
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 55,
+    "salePrice": 28,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "thumbnailPath": "assets/ui/substrate/planted-soil-dark.png"
+  }
+}

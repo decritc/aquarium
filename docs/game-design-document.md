@@ -442,11 +442,12 @@ The smallest meaningful playable version should likely include:
 3. GLB-based fish model loading with metadata-driven configuration
 4. A small set of freshwater fish species
 5. Built-in background selection and substrate selection
-6. Buy/place fish and decorations in at least one mode
-7. Fish idle movement with authored species behavior differences
-8. Visible cleanliness or algae state
-9. Basic breeding and offspring generation for career mode
-10. Public sharing for a single opt-in tank
+6. Top-down placement mode for depth-aware layout authoring
+7. Buy/place fish and decorations in at least one mode
+8. Fish idle movement with authored species behavior differences
+9. Visible cleanliness or algae state
+10. Basic breeding and offspring generation for career mode
+11. Public sharing for a single opt-in tank
 
 ## Risks to manage
 
@@ -464,5 +465,6 @@ The smallest meaningful playable version should likely include:
 - Keep content data-driven where possible
 - Separate simulation rules from presentation
 - Treat fish assets and metadata as a formal pipeline, not ad hoc files
+- Treat top-down placement as an editing tool in service of the side-view aquarium presentation
 - Design per-mode experiences intentionally instead of forcing one ruleset across
   all players

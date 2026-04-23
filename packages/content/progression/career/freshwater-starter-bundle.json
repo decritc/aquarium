@@ -1,0 +1,45 @@
+{
+  "id": "career-freshwater-starter-bundle",
+  "mode": "career",
+  "targetType": "bundle",
+  "targetId": "career-freshwater-starter-bundle",
+  "unlockType": "default",
+  "requirements": {
+    "minimumPlayerLevel": 1,
+    "requiredAccountTier": "free",
+    "notes": "Starter freshwater fish, basic hardware, and beginner decor for the first career tank."
+  },
+  "rewards": {
+    "fishSpeciesIds": [
+      "betta-splendens",
+      "guppy",
+      "neon-tetra",
+      "corydoras-panda"
+    ],
+    "tankItemIds": [
+      "basic-sponge-filter",
+      "basic-tropical-heater",
+      "floating-log-hide",
+      "river-rock-cluster",
+      "java-fern",
+      "anubias-nana",
+      "fine-gravel-brown"
+    ],
+    "featureFlags": [
+      "career-market-board",
+      "tank-cleanliness-ui",
+      "fixed-side-view-renderer"
+    ],
+    "currencies": [
+      {
+        "currencyId": "credits",
+        "amount": 250
+      }
+    ]
+  },
+  "visibility": {
+    "showInCatalogBeforeUnlock": true,
+    "showUnlockHint": true,
+    "hiddenUntilEligible": false
+  }
+}

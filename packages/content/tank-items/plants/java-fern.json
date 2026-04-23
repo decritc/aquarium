@@ -1,0 +1,66 @@
+{
+  "id": "java-fern",
+  "displayName": "Java Fern",
+  "description": "A hardy low-maintenance aquarium plant for starter tropical tanks.",
+  "category": "plant",
+  "tags": ["starter", "plant", "low-maintenance", "freshwater"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "bottom",
+    "placementBehavior": "rooted",
+    "requiredHabitatTags": ["plants"],
+    "footprint": {
+      "widthUnits": 1,
+      "depthUnits": 1,
+      "heightUnits": 2
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1", "sandbox-starter-backdrops-and-plants"]
+  },
+  "effects": {
+    "visualThemeTags": ["natural", "planted", "lush"],
+    "cleanliness": [
+      {
+        "metric": "algae-growth",
+        "modifier": -1
+      },
+      {
+        "metric": "maintenance-load",
+        "modifier": -1
+      }
+    ],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 4
+      },
+      {
+        "stat": "water-clarity",
+        "modifier": 1
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "planted-tank-fish",
+        "modifier": 4
+      },
+      {
+        "tag": "community-fish",
+        "modifier": 2
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 18,
+    "salePrice": 9,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/java-fern.glb",
+    "thumbnailPath": "assets/models/items/java-fern.png"
+  }
+}
