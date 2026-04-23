@@ -166,7 +166,7 @@ future agents can scaffold pages and major UI zones without inventing the IA.
     theme tags
 
 [bottom social strip]
-  like | follow | comment | visit creator
+  like | favorite
 ```
 
 Important rule:
@@ -175,6 +175,11 @@ Important rule:
 - no pH/temperature HUD
 - no fish-care diagnostics
 - no business/economy chrome
+
+First implementation note:
+
+- keep this observer screen limited to viewing plus like/favorite interactions
+- follow/comment/creator-profile expansion can be added in a later roadmap stage
 
 ## 7. Tank editor screen
 

@@ -173,16 +173,20 @@ public, meaning observable by others.
 
 First-pass observer features:
 
-- Browse public tanks
 - View tank name, owner, theme, species list, and summary stats
 - Watch fish behavior in real time or near-real time
-- View featured/popular/recent aquariums
 - Like or favorite tanks
-- Follow creators
-- Leave comments subject to moderation rules
+- View a single handcrafted featured aquarium in the first implementation
+
+Follow and comment features should be phased in later according to
+`docs/feature-rollout-roadmap.md`.
 
 Later possibilities:
 
+- Browse public tanks more broadly once public content volume justifies it
+- View featured/popular/recent aquariums
+- Follow creators
+- Leave comments subject to moderation rules
 - Ranked showcases
 - Event tanks or contests
 - Curator picks and editorial collections

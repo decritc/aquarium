@@ -112,8 +112,10 @@ This is a recommendation, not a final decision.
 
 - Public aquarium profiles
 - Shareable links
-- Likes, follows, comments, and discovery surfaces
-- Search across owner, tags, species, and popularity
+- Likes/favorites first
+- Discovery surfaces once public-tank volume justifies them
+- Follows/comments later as demand-triggered social expansion
+- Search across owner, tags, species, and popularity once discoverability reaches critical mass
 
 ### Phase 6: Monetization and live ops
 

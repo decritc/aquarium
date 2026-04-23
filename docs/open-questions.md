@@ -11,8 +11,9 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 2. Resolved: guest sandbox should use temporary browser-local save behavior in the
    first implementation rather than full account-backed persistence.
 3. Resolved: tanks marked public should be treated as observable by others.
-4. Should observer interactions such as likes, follows, and comments be available
-   immediately, or unlocked in phases after simple public browsing works well?
+4. Resolved: first implementation observer mode should support view plus like/favorite
+   only. Follows and comments should be added in later milestones once public-tank
+   usage and demand justify the added UX and moderation scope.
 5. When should custom backdrop uploads unlock:
    - account creation,
    - premium purchase,

@@ -37,6 +37,12 @@ The intended social feature set includes:
 - comments
 - curated/featured showcases
 
+Rollout intent:
+
+- the **first implementation** should ship with viewing plus likes/favorites only
+- follows and comments should be added in later milestones once public-tank usage
+  and observer demand justify the extra social complexity
+
 ### 4. Difficulty should be adaptive
 
 The game should use an **AI director** or adaptive challenge layer that tries to

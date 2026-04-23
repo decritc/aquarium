@@ -153,6 +153,7 @@ Required shape:
 - one handcrafted studio/demo tank as the source content for that route
 - read-only "public aquarium style" presentation
 - observer-safe minimal HUD
+- like/favorite interaction only
 - enough quality to support landing-page screenshots and CTA handoff
 
 Deferred until public-tank volume justifies it:
@@ -160,6 +161,7 @@ Deferred until public-tank volume justifies it:
 - full gallery or feed
 - search and filters
 - broad creator discovery
+- follows and comments
 
 Rollout rule:
 

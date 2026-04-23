@@ -286,7 +286,22 @@ Each public tank page should include:
 - tank image/live view
 - visible species list
 - style/theme tags
-- likes/follows/comments actions when enabled
+- like/favorite actions in the first implementation
+- follow/comment actions only after the observer rollout threshold is met
+
+### Observer interaction rollout
+
+First implementation:
+
+- view
+- like/favorite
+
+Later rollout:
+
+- add follow and broader discovery once there are roughly 10+ public observable tanks
+- add comments only when moderation and community demand justify them
+
+See `docs/feature-rollout-roadmap.md` for the current rollout thresholds.
 
 ### Observer presentation rule
 
@@ -372,9 +387,9 @@ Recommended actions:
 In observer mode, the action bar should collapse down to a much lighter strip such as:
 
 - like
-- follow
-- comment
 - view creator
+
+Later versions may add follow/comment once the rollout threshold is met.
 
 ## 7. Editing flow
 
