@@ -181,7 +181,8 @@ The language should stay warm and inviting even for higher-pressure options.
 3. Enter tank editor with default starter content
 4. Preview tank in side-view
 5. Place decor/fish
-6. Receive optional upgrade prompts for saving, more content, or more tanks
+6. Use temporary browser-local save during the session window
+7. Receive optional upgrade prompts for stronger persistence, more content, or more tanks
 
 ### Sandbox in-session flow
 
@@ -202,6 +203,12 @@ Sandbox should feel especially low-pressure, with:
 - gentle suggestion language
 - easy hiding/collapsing of editing panels
 - a presentation mode that can leave the tank mostly unobstructed
+
+Guest save behavior for the first implementation:
+
+- allow temporary browser-local persistence for the active guest sandbox
+- do not promise durable cross-device or account-level persistence
+- use account upgrade prompts when the player wants stronger save guarantees
 
 ## 4. Career flow
 
@@ -412,6 +419,13 @@ Natural moments for upgrade prompts:
 - when trying to create a second tank
 - when trying to upload a custom backdrop
 - when trying to access broader asset libraries
+
+For the first implementation, this should be framed carefully because guest users
+do have temporary browser-local persistence. The upgrade prompt should emphasize:
+
+- stronger persistence and account-backed saves
+- multi-device continuity later
+- more tanks and broader content access
 
 These should feel helpful, not punitive.
 

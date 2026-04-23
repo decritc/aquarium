@@ -66,6 +66,7 @@ Must include:
 
 - one guest-accessible sandbox tank
 - no required account to begin
+- temporary browser-local save behavior for guest sessions
 - starter template selection with exactly three day-one options:
   - betta display
   - tropical community
@@ -192,6 +193,8 @@ These can be planned, but they should not block the milestone.
 6. Use orbit/snap views to inspect placement
 7. Return to side-view preview
 8. Observe fish motion and tank feel
+9. Allow temporary browser-local session continuity without promising durable
+   cross-device persistence
 
 ## Required screens
 

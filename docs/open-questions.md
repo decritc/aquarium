@@ -7,8 +7,8 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 ## Product and mode design
 
 1. For guest sandbox users, how large should the free asset catalog be at launch?
-2. Should guests be able to save and return to their sandbox aquarium, or is that
-   an account-only feature?
+2. Resolved: guest sandbox should use temporary browser-local save behavior in the
+   first implementation rather than full account-backed persistence.
 3. Should observer interactions such as likes, follows, and comments be available
    immediately, or unlocked in phases after simple public browsing works well?
 4. When should custom backdrop uploads unlock:
