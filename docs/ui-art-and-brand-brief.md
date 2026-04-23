@@ -408,6 +408,13 @@ Preferred first hero fish:
 - build the composition around one elegant centerpiece fish rather than a busy school
 - let plant structure and hardscape support the betta instead of competing with it
 
+Preferred first framing balance:
+
+- show enough of the full aquarium to sell the tank-building fantasy
+- keep the betta clearly legible as the emotional focal point
+- avoid compositions that crop so tightly the scene stops reading as an aquarium
+- avoid compositions so wide that the betta becomes visually anonymous
+
 Preferred first hardscape emphasis:
 
 - driftwood-led composition first

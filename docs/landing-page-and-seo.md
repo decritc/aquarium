@@ -88,6 +88,8 @@ Recommended visual style:
 - intentional framing that highlights the side-view aquarium presentation
 - for the first implementation, prefer a **calm premium planted-beauty mood** over a
   dramatic or noisy spectacle-first composition
+- frame the scene so the **full aquarium composition reads clearly first**, while the
+  betta still remains the obvious focal fish within that composition
 
 Avoid:
 

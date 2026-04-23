@@ -97,6 +97,12 @@ Preferred mood for the first implementation:
 - soothing, high-trust, premium aquarium atmosphere
 - visually rich but not chaotic
 
+Preferred framing:
+
+- show enough of the full tank to sell the aquarium fantasy
+- keep the betta clearly readable as the focal point
+- avoid compositions that become only a fish portrait or only an environment shot
+
 Preferred hero-fish direction for the first implementation:
 
 - lead with a **betta** as the primary visual hero

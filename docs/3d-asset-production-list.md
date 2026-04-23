@@ -270,6 +270,8 @@ The first major marketing mood should be:
 That means featured showcase assets should favor:
 
 - a **betta-led hero composition**
+- a framing balance where the **whole tank composition reads first** while the betta
+  still holds the clearest focal emphasis
 - a **soft blue gradient studio backdrop** as the first backdrop choice
 - elegant planted compositions
 - a **driftwood-led hardscape composition** first
