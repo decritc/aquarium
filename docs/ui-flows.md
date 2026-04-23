@@ -203,6 +203,7 @@ Sandbox should feel especially low-pressure, with:
 - gentle suggestion language
 - easy hiding/collapsing of editing panels
 - a presentation mode that can leave the tank mostly unobstructed
+- a small but satisfying starter asset library that feels real, not tokenized
 
 Guest save behavior for the first implementation:
 

@@ -271,4 +271,6 @@ Implication:
    requirements rather than polish.
 7. Treat "public" as meaning "observable by others," and expand observer
    discoverability once there is enough public content density to justify it.
-8. Keep the premium model sustainable without making the experience feel paywalled.
+8. Keep the guest sandbox library small but satisfying so the free experience feels
+   premium without forcing early content sprawl.
+9. Keep the premium model sustainable without making the experience feel paywalled.

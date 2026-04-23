@@ -15,7 +15,7 @@
 Anonymous or non-upgraded sandbox users should be able to:
 
 - build one aquarium
-- access a curated starter asset library
+- access a curated starter asset library that feels small but satisfying
 - experiment with fish placement and tank composition
 - receive occasional upgrade prompts for more assets and more tank capacity
 

@@ -6,7 +6,8 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 
 ## Product and mode design
 
-1. For guest sandbox users, how large should the free asset catalog be at launch?
+1. Resolved: guest sandbox should use a small but satisfying starter asset library
+   at launch.
 2. Resolved: guest sandbox should use temporary browser-local save behavior in the
    first implementation rather than full account-backed persistence.
 3. Resolved: tanks marked public should be treated as observable by others.

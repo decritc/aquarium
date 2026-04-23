@@ -223,7 +223,7 @@ be reserved for career-oriented progression or later expansion.
 Recommended guest sandbox content:
 
 - preset backdrops
-- a small decor and plant library
+- a small but satisfying decor and plant library
 - betta
 - guppy
 - neon tetra

@@ -67,6 +67,8 @@ Must include:
 - one guest-accessible sandbox tank
 - no required account to begin
 - temporary browser-local save behavior for guest sessions
+- a small but satisfying starter asset library rather than either a token teaser
+  catalog or a broad low-polish dump
 - starter template selection with exactly three day-one options:
   - betta display
   - tropical community
@@ -109,6 +111,11 @@ Minimum included item/content categories:
 - 2 plant items
 - 2 equipment items
 - 2 built-in backdrops
+
+Content philosophy:
+
+- enough variety to make the sandbox feel real and expressive
+- few enough items to preserve polish, performance, and QA discipline
 
 ## 5. Editing experience
 
