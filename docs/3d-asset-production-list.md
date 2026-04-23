@@ -17,6 +17,7 @@ useful order without wasting time on low-priority content.
 
 Where relevant, each asset should eventually provide:
 
+- `MESHY_PROMPT.md` or equivalent generation brief
 - runtime `model.glb`
 - preview image or thumbnail
 - metadata JSON that matches the repo schemas
@@ -377,6 +378,18 @@ To make generation work easier to manage, batch assets like this:
 - signature hero hardscape set
 - premium planted cluster
 - one tall statement decor piece
+
+## Prompt workflow recommendation
+
+For founder-driven generation work, each starter asset folder should contain:
+
+1. `MESHY_PROMPT.md` - the generation brief
+2. generated mesh output such as `model.glb`
+3. preview render stills
+4. metadata once the runtime-ready version is accepted
+
+Use the shared style direction in `assets/models/MESHY_STYLE_GUIDE.md` to keep the
+entire first asset wave visually consistent.
 
 ## Performance reminders for all generated assets
 
