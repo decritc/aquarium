@@ -86,6 +86,8 @@ Recommended visual style:
 - visible fish movement and layered tank depth
 - subtle motion, not distracting chaos
 - intentional framing that highlights the side-view aquarium presentation
+- for the first implementation, prefer a **calm premium planted-beauty mood** over a
+  dramatic or noisy spectacle-first composition
 
 Avoid:
 

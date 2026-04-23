@@ -260,6 +260,28 @@ still part of the asset backlog.
 
 These are the next most useful assets once the core milestone queue is covered.
 
+### Marketing mood direction
+
+The first major marketing mood should be:
+
+- **calm premium planted beauty**
+
+That means featured showcase assets should favor:
+
+- elegant planted compositions
+- premium driftwood and rock layering
+- soft bright aquarium lighting
+- clean healthy tank reads
+- beautiful stillness with subtle life, not loud spectacle
+
+Avoid making the first observer/hero tank feel:
+
+- chaotic
+- over-decorated
+- theme-park cheesy
+- battle-arena dramatic
+- cluttered with too many competing focal points
+
 ### 23. Signature featured-aquarium hardscape set
 
 Purpose:

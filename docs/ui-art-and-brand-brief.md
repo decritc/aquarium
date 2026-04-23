@@ -392,6 +392,13 @@ At least one:
 - hero poster frame from a cinematic loop
 - supporting layered composition assets
 
+Preferred first mood:
+
+- calm premium planted beauty
+- elegant greenery and layered hardscape
+- luminous fish motion without frantic action
+- premium serenity rather than dramatic spectacle
+
 ### B. Mode section visuals
 
 Need at least:
@@ -399,6 +406,12 @@ Need at least:
 - one sandbox image
 - one career image
 - one observer image
+
+The first observer and hero-adjacent visuals should lean toward:
+
+- planted beauty
+- clean premium tank composition
+- soothing motion and lighting
 
 ### C. Screenshot framing system
 

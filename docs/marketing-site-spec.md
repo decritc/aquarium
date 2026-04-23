@@ -90,6 +90,13 @@ Hero visual requirements:
 - premium art direction
 - no placeholder visual treatment
 
+Preferred mood for the first implementation:
+
+- calm premium planted beauty
+- elegant planted composition before dramatic spectacle
+- soothing, high-trust, premium aquarium atmosphere
+- visually rich but not chaotic
+
 Preferred first implementation format:
 
 - a lightweight cinematic motion loop
@@ -123,6 +130,10 @@ Required contents:
 - 3-6 strong screenshots or polished renders
 - optional short motion loops or light video
 - examples of different tank moods or archetypes
+
+For the first implementation, at least one of the strongest showcase assets should
+lean into the calm premium planted-beauty mood so the site establishes a relaxing,
+high-quality identity immediately.
 
 ## 4. Feature pillars section
 
