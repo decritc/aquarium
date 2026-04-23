@@ -203,6 +203,16 @@ Each fish species should eventually have structured data covering:
 - Breeding rules
 - Sale value range
 - Visual model references
+- Habitat category compatibility
+- Tankmate behavior rules
+
+The species-level simulation and compatibility contract should live separately from
+the render-asset metadata so future fish can be added by pairing:
+
+1. a GLB model plus `metadata.json` for asset loading, and
+2. a species-definition JSON file for simulation, behavior, compatibility, and economy
+
+See `docs/content-contracts.md` for the current content model.
 
 ### Fish trait layers
 
@@ -238,6 +248,41 @@ surprise or easter-egg content.
 Fish should retain pedigree/history suitable for advanced players and collectors.
 This information should be accessible, but not forced into the primary UX whenever
 fish are born or acquired.
+
+### Habitat and social compatibility
+
+Fish should not be treated as generic animated decorations. Species compatibility
+must reflect aquarium categories and known behavioral tendencies.
+
+Examples:
+
+- tropical freshwater fish should generally be grouped with other tropical freshwater species
+- saltwater fish should require saltwater-compatible tanks and tankmates
+- coldwater, brackish, and specialty species should carry explicit habitat requirements
+- territorial or aggressive species should behave differently from schooling fish
+
+This means the content model should encode:
+
+- water type compatibility
+- habitat category tags such as tropical, coldwater, reef, planted, or blackwater
+- school size preferences
+- aggression/territoriality
+- explicit tankmate restrictions and conflict tags
+
+### Behavioral authenticity
+
+When players combine fish that do not get along, the simulation should show that
+through behavior and tank outcomes instead of silently allowing unrealistic mixes.
+
+Examples of expected behavior:
+
+- a betta placed with incompatible tankmates may chase, posture, or harass them
+- schooling fish that are kept in numbers that are too low may behave as stressed or skittish
+- territorial fish may defend hideouts or preferred swim zones
+- peaceful community fish should spend more time schooling, foraging, or avoiding conflict
+
+The first implementation does not need full biological realism, but species should
+have authored behavior profiles that make common aquarium knowledge legible in play.
 
 ## Economy overview
 
@@ -304,6 +349,7 @@ Recommended early simulation layers:
 - Passive earnings/value generation
 - Basic compatibility rules
 - Bounded offline catch-up
+- Simple species-authored aggression and schooling behavior
 
 Defer deeper realism unless it strengthens gameplay:
 
@@ -311,6 +357,7 @@ Defer deeper realism unless it strengthens gameplay:
 - Detailed water chemistry
 - Predator-prey behavior
 - Complex maintenance failure cascades
+- Full emergent ecosystem simulation
 
 ## Social/public features
 

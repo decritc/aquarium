@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/fish-species.schema.json",
+  "title": "FishSpeciesDefinition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "displayName",
+    "scientificName",
+    "classification",
+    "habitat",
+    "compatibility",
+    "behavior",
+    "breeding",
+    "economy",
+    "assets"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "scientificName": {
+      "type": "string"
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["environment", "climate", "speciesGroup"],
+      "properties": {
+        "environment": {
+          "type": "string",
+          "enum": ["freshwater", "saltwater", "brackish", "fantasy"]
+        },
+        "climate": {
+          "type": "string",
+          "enum": ["coldwater", "temperate", "tropical", "reef", "specialty"]
+        },
+        "speciesGroup": {
+          "type": "string"
+        },
+        "rarityTier": {
+          "type": "string",
+          "enum": ["common", "uncommon", "rare", "epic", "legendary"]
+        }
+      }
+    },
+    "habitat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumTankSizeGallons",
+        "temperatureCelsius",
+        "phRange",
+        "salinityPpt",
+        "waterFlow",
+        "tankZone",
+        "minimumGroupSize",
+        "maximumGroupSize",
+        "territorialSpaceGallons"
+      ],
+      "properties": {
+        "minimumTankSizeGallons": {
+          "type": "number",
+          "minimum": 0
+        },
+        "temperatureCelsius": {
+          "$ref": "#/$defs/rangeNumber"
+        },
+        "phRange": {
+          "$ref": "#/$defs/rangeNumber"
+        },
+        "salinityPpt": {
+          "$ref": "#/$defs/rangeNumber"
+        },
+        "waterFlow": {
+          "type": "string",
+          "enum": ["still", "low", "medium", "high"]
+        },
+        "tankZone": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["surface", "upper", "mid", "lower", "bottom", "caves"]
+          },
+          "uniqueItems": true
+        },
+        "minimumGroupSize": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "maximumGroupSize": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "territorialSpaceGallons": {
+          "type": "number",
+          "minimum": 0
+        },
+        "hardscapePreferences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "plants",
+              "driftwood",
+              "rocks",
+              "sand",
+              "gravel",
+              "caves",
+              "open-swim-space",
+              "coral",
+              "anemone"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "temperament",
+        "communitySuitability",
+        "withSameSpecies",
+        "compatibleSpeciesIds",
+        "incompatibleSpeciesIds",
+        "incompatibleTraits"
+      ],
+      "properties": {
+        "temperament": {
+          "type": "string",
+          "enum": ["peaceful", "semi-aggressive", "aggressive", "predatory"]
+        },
+        "communitySuitability": {
+          "type": "string",
+          "enum": ["excellent", "situational", "poor", "species-only"]
+        },
+        "withSameSpecies": {
+          "type": "string",
+          "enum": ["schooling", "tolerant", "territorial", "solitary"]
+        },
+        "compatibleSpeciesIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "uniqueItems": true
+        },
+        "incompatibleSpeciesIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "uniqueItems": true
+        },
+        "incompatibleTraits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["trait", "reason"],
+            "properties": {
+              "trait": {
+                "type": "string",
+                "enum": [
+                  "long-fins",
+                  "bright-colors",
+                  "slow-swimmer",
+                  "small-prey",
+                  "territorial",
+                  "shrimp",
+                  "snail",
+                  "surface-dweller"
+                ]
+              },
+              "reason": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "behavior": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "activityLevel",
+        "swimSpeed",
+        "schooling",
+        "territoriality",
+        "aggressionTriggers",
+        "responseProfile"
+      ],
+      "properties": {
+        "activityLevel": {
+          "type": "string",
+          "enum": ["low", "moderate", "high"]
+        },
+        "swimSpeed": {
+          "type": "string",
+          "enum": ["slow", "medium", "fast"]
+        },
+        "schooling": {
+          "type": "string",
+          "enum": ["none", "loose", "tight"]
+        },
+        "territoriality": {
+          "type": "string",
+          "enum": ["low", "moderate", "high", "extreme"]
+        },
+        "aggressionTriggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "same-species-males",
+              "long-finned-fish",
+              "crowded-tank",
+              "shared-surface-zone",
+              "breeding-state",
+              "resource-competition",
+              "small-prey-nearby",
+              "none"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "responseProfile": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["defaultState", "states"],
+          "properties": {
+            "defaultState": {
+              "type": "string",
+              "enum": ["calm", "cautious", "territorial", "aggressive"]
+            },
+            "states": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["when", "behavior", "intensity"],
+                "properties": {
+                  "when": {
+                    "type": "string"
+                  },
+                  "behavior": {
+                    "type": "string",
+                    "enum": [
+                      "flare",
+                      "chase",
+                      "nip",
+                      "hide",
+                      "school-tighten",
+                      "scatter",
+                      "hover-territory",
+                      "ignore"
+                    ]
+                  },
+                  "intensity": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high"]
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "feedingStyle": {
+          "type": "string",
+          "enum": ["surface", "midwater", "bottom", "grazer", "predatory"]
+        }
+      }
+    },
+    "breeding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canBreed",
+        "breedingType",
+        "maturityHours",
+        "gestationOrIncubationHours"
+      ],
+      "properties": {
+        "canBreed": {
+          "type": "boolean"
+        },
+        "breedingType": {
+          "type": "string",
+          "enum": ["livebearer", "egg-layer", "mouthbrooder", "pair-bond", "hybrid-special", "none"]
+        },
+        "maturityHours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gestationOrIncubationHours": {
+          "type": "number",
+          "minimum": 0
+        },
+        "offspringRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min", "max"],
+          "properties": {
+            "min": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "traitPools": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hybridizationGroup": {
+          "type": "string"
+        }
+      }
+    },
+    "economy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["basePurchasePrice", "baseSalePrice", "upkeepPerDay"],
+      "properties": {
+        "basePurchasePrice": {
+          "type": "number",
+          "minimum": 0
+        },
+        "baseSalePrice": {
+          "type": "number",
+          "minimum": 0
+        },
+        "upkeepPerDay": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modelMetadataId"],
+      "properties": {
+        "modelMetadataId": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "icon": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rangeNumber": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

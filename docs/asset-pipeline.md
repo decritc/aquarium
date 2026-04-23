@@ -39,18 +39,26 @@ assets/
 
 ## Metadata responsibilities
 
-Each fish metadata file should describe:
+Each fish metadata file should describe render and model-loading concerns only:
 
-- Species and display name
-- Water type compatibility
-- Rarity and acquisition source
-- Breeding tags and trait hooks
-- Basic simulation hints such as size, swim zone, and schooling behavior
-- Asset references for the client to load animations and thumbnails
+- Species definition linkage and display label
+- Asset references for the client to load meshes, animations, and thumbnails
+- Variant-level rendering hints such as preferred swim zone or silhouette tags
+- Optional clip purposes such as cruise, turn, threat display, or feed
+
+Authoritative gameplay data such as compatibility, aggression, tank rules, and
+economy values should live in species content files under `packages/content/`
+rather than being duplicated into render-asset metadata.
 
 ## Validation
 
 Use `schemas/fish-model.schema.json` to validate fish metadata files.
+
+Gameplay content contracts live alongside it:
+
+- `schemas/fish-species.schema.json`
+- `schemas/tank-item.schema.json`
+- `schemas/progression-unlock.schema.json`
 
 ## Authoring guidance
 
