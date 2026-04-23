@@ -42,6 +42,21 @@ Tanks should feel active and soothing even when the player is not making direct
 inputs. Fish movement, schooling, idling, feeding, and tank ambience should make
 the aquarium enjoyable to watch.
 
+### UI and mood target
+
+The product should feel cozy, playful, and comfortable rather than clinical or
+industrial. The UI direction should lean closer to a polished life-sim interface
+than to a harsh spreadsheet or management dashboard.
+
+Guidelines:
+
+- use rounded, friendly, high-legibility interface shapes
+- prefer playful, inviting presentation over severe "control panel" styling
+- keep the aquarium itself as the emotional center of the screen
+- support long, low-stress viewing sessions for zen-oriented players
+- avoid making normal play feel tense unless a player explicitly opts into a
+  harder director style
+
 ### Presentation target
 
 The game should present tanks primarily from a fixed side-view camera. Fish and
@@ -152,6 +167,26 @@ Later possibilities:
 - Event tanks or contests
 - Curator picks and editorial collections
 
+### Observer HUD principle
+
+Observer mode should keep UI interference minimal. The aquarium itself should be
+the hero, not the owner-management tools.
+
+Observer-facing UI should favor:
+
+- a clean viewing frame
+- subtle social actions
+- species/theme information
+- owner attribution and discovery tools
+
+Observer mode should avoid exposing owner-only operational tools such as:
+
+- pH gauges
+- water-temperature controls
+- owner diagnostics
+- fish health management panels
+- career-specific alerts or business overlays
+
 ## Target audience
 
 - Players who enjoy relaxing simulation and idle games
@@ -221,6 +256,25 @@ side angle:
 5. substrate/ground-cover layer
 
 This should allow depth, parallax, and lighting without requiring a moving camera.
+
+### Owner tools versus observer presentation
+
+The game should distinguish between:
+
+1. **owner management overlays** used in sandbox or career play, and
+2. **viewer presentation overlays** used in observer mode.
+
+Owner overlays may include:
+
+- water temperature gauge
+- pH and water-condition indicators
+- fish health summaries
+- compatibility warnings
+- breeding and maintenance panels
+
+Observer overlays should remain lightweight and should not reveal the owner's
+full management HUD. This keeps public aquariums feeling like relaxing exhibits
+rather than admin dashboards.
 
 ## Fish systems
 
@@ -378,6 +432,24 @@ Career mode should eventually include an adaptive "director" layer that tunes
 challenge and assistance based on player behavior. The goal is to keep the game
 fun and tense without pushing players into unwinnable states too easily.
 
+The player should be able to choose a director profile, much like selecting a
+storyteller or tone setting in a colony sim. This lets the same simulation
+support both relaxed and more demanding play styles.
+
+Example profile families:
+
+- **Cozy / good-vibes director**
+  - low stress
+  - protective against harsh spirals
+  - suitable for zen players and semi-sandbox use
+- **Balanced director**
+  - moderate pressure
+  - default recommendation for most players
+- **Hardcore / intense director**
+  - stronger setbacks
+  - more realism pressure
+  - better suited to expert breeders seeking challenge
+
 Director responsibilities may include:
 
 - detecting whether a player is casual, design-oriented, or optimization-focused
@@ -399,6 +471,7 @@ Recommended early simulation layers:
 - Visible algae and cleanliness state
 - Cleanup-role effects on waste or algae pressure
 - Authored decor placement rules such as heavy, rooted, floating, or mounted
+- Director profile selection and low-intensity guidance
 
 Defer deeper realism unless it strengthens gameplay:
 

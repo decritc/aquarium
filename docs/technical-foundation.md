@@ -127,34 +127,46 @@ This is a recommendation, not a final decision.
    The simulation package should be testable without the renderer. Rendering
    should visualize simulation state, not define it.
 
-3. **Readable 2.5D presentation**
+3. **Cozy life-sim UI presentation**
+   The interface should lean playful, rounded, and inviting rather than
+   mechanical or enterprise-like. Think comforting life-sim readability over
+   dense control panels, especially in sandbox and observer flows.
+
+4. **Readable 2.5D presentation**
    The renderer should prioritize a calm, single side-view framing with layered
    depth, allowing 3D fish and decor to feel dimensional without requiring a
-   free-look camera.
+   free-look camera during normal viewing.
 
-4. **Editing camera is not the presentation camera**
+5. **Editing camera is not the presentation camera**
    The placement/editing experience should support free orbit plus quick angle
    snaps so players can judge decor scale, terrain shape, and front/back depth
    before returning to the primary side-view aquarium presentation.
 
-5. **Client prediction where safe**
+6. **Client prediction where safe**
    Non-economy actions may feel immediate on the client, but authoritative
    economy and breeding outcomes should be server-backed once multiplayer/public
    persistence exists.
 
-6. **Graceful idle progression**
+7. **Graceful idle progression**
    Offline progress should be computed from timestamps and bounded formulas,
    rather than requiring the simulation to run continuously on the server.
 
-7. **Mode-specific rules over one-size-fits-all design**
+8. **Mode-specific rules over one-size-fits-all design**
    Sandbox, career, and observer mode should share rendering and content systems
    where possible, but they should be allowed to differ in economy rules,
    progression, public visibility, and difficulty tuning.
 
-8. **Adaptive challenge layer**
-   The simulation should allow an AI-director-style balancing layer to adjust
-   pressure, recovery opportunities, and challenge intensity so the game remains
-   fun for both casual decorators and expert breeders.
+9. **Selectable director profiles**
+   The simulation should allow an AI-director-style layer to adjust pressure,
+   recovery opportunities, and challenge intensity, but players should be able
+   to choose the general tone of that director from more relaxed/zen profiles to
+   more demanding profiles.
+
+10. **Observer-safe presentation**
+   Observer mode should render tanks as clean viewing experiences. Owner-only
+   gauges, diagnostics, and management overlays such as pH or temperature tools
+   should remain hidden from public viewing unless a future explicit creator mode
+   allows them to be shown.
 
 ## Data domains
 

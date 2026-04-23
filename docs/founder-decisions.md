@@ -163,6 +163,57 @@ Fish models are expected to arrive primarily as **GLB** assets.
 The current likely modeling workflow involves **Meshy AI** as an upstream asset
 source.
 
+### 19. UI tone should be playful and cozy
+
+The interface should feel closer to a friendly life-sim UI than a technical
+operations dashboard.
+
+Design intent:
+
+- rounded, readable, welcoming shapes
+- playful but polished visual treatment
+- calm color language that supports long passive viewing sessions
+- avoid heavy enterprise-style control panels as the default presentation
+
+The target mood is relaxing, comfortable, and "good vibes" forward rather than
+high-stress management first.
+
+### 20. Players should choose their AI director style
+
+The adaptive challenge system should not be a single invisible difficulty layer.
+Players should be able to choose a director/profile much like a storyteller
+system in colony sims.
+
+Implication:
+
+- relaxed players can choose a laid-back, beauty-first, low-stress experience
+- career-minded players can choose a balanced progression experience
+- extreme players can choose a more demanding, challenge-heavy profile
+
+### 21. Observer presentation must be low-obstruction
+
+Observer mode should prioritize tank viewing over management surfaces.
+
+Implication:
+
+- owner-only gauges and tools should not appear in observer mode
+- public viewers should not see career-management overlays such as pH gauges,
+  water temperature tools, or private fish-care diagnostics
+- observer mode should feel suitable for passive ambient watching or
+  "screensaver-like" viewing
+
+### 22. Career tools are owner-facing, not audience-facing
+
+Career mode may expose management aids to the player, including:
+
+- pH and temperature indicators
+- observable fish health summaries
+- compatibility warnings
+- maintenance and breeding guidance
+
+Those tools exist for the owner/operator of the tank and should be hidden or
+significantly reduced when the same tank is viewed publicly.
+
 ## Key implementation implications
 
 1. Build the product around distinct mode entry points rather than one unified
@@ -171,5 +222,8 @@ source.
    a model and metadata JSON.
 3. Treat adaptive difficulty as a first-class system rather than a late tuning
    pass.
-4. Design social systems with moderation and privacy from the beginning.
-5. Keep the premium model sustainable without making the experience feel paywalled.
+4. Treat director/profile selection as part of the player-facing UX rather than
+   a hidden tuning detail.
+5. Design social systems with moderation, privacy, and observer-safe
+   presentation from the beginning.
+6. Keep the premium model sustainable without making the experience feel paywalled.

@@ -16,6 +16,8 @@ It complements:
 - Provide enough editing freedom to judge object scale and depth
 - Keep advanced placement readable for casual players
 - Support both quick decoration and deeper aquarium planning
+- Keep the visual language playful, soft, and life-sim inspired rather than sterile
+  or enterprise-like
 
 ## Core editor principle
 
@@ -27,6 +29,13 @@ That means:
 - the player can freely orbit/rotate the tank in edit mode
 - the editor should provide shortcut views for common tasks
 - the player should always be able to snap back to the default side presentation
+
+The editor should still feel cozy and approachable:
+
+- rounded panels and playful controls
+- warm, readable iconography
+- visual emphasis on creativity and preview, not only measurements
+- advanced placement tools available without making the screen feel technical
 
 ## Editor camera modes
 
@@ -109,6 +118,7 @@ Recommended desktop layout:
 - item categories
 - search/filter
 - favorites/recent items
+- soft, toy-like category chips and visual thumbnails instead of dense text lists
 
 ### Center canvas
 
@@ -123,6 +133,7 @@ Recommended desktop layout:
 - placement hints
 - compatibility/effect summary
 - environment impact preview
+- simple benefit/caution phrasing instead of raw numeric overload where possible
 
 ### Bottom bar
 
@@ -130,6 +141,25 @@ Recommended desktop layout:
 - side preview toggle
 - hide UI for showcase preview
 - save / cancel / publish buttons
+
+## Visual language
+
+The editor should feel closer to a cozy life-sim build mode than a technical
+layout workstation.
+
+Desired qualities:
+
+- rounded cards, pill buttons, and friendly icons
+- bright but calm accent colors
+- layered panels that feel soft and playful
+- light animation and satisfying hover/placement feedback
+- information grouped into approachable chunks instead of dense dashboards
+
+Avoid:
+
+- industrial grayscale control panels
+- overly mechanical widgets that feel like engineering software
+- dense debug-style readouts during routine decorating
 
 ## Placement feedback
 
@@ -182,6 +212,12 @@ Examples:
 - "This backdrop fits the current planted theme."
 - "This filter may create too much flow for a betta display tank."
 
+Guidance tone should feel supportive and calm:
+
+- suggestive rather than scolding
+- cozy and readable
+- helpful for zen/creative players while still useful to optimization-minded ones
+
 ## Terrain and large-object considerations
 
 Your examples highlight why edit mode cannot be top-down only.
@@ -217,6 +253,8 @@ This is a strong argument for keeping:
 - automatic snapping
 - limited rotation where appropriate
 - strong warnings and tips
+- lighter information density
+- emphasis on preview and feel
 
 ### Advanced mode
 
@@ -225,6 +263,7 @@ This is a strong argument for keeping:
 - depth management
 - optional rotation increments
 - richer overlays
+- still styled as an approachable creative tool, not a technical editor
 
 ## Save and preview states
 

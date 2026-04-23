@@ -11,6 +11,29 @@ implementation.
 - Let players get to a meaningful aquarium quickly
 - Surface warnings and complexity gradually instead of front-loading them
 - Support both creative and systems-driven players without forcing one path
+- Favor a playful, cozy, life-sim-inspired interface over a harsh mechanical dashboard
+- Keep observer mode visually clean so tanks can function as relaxing viewing experiences
+
+## Visual language direction
+
+The UI should feel more like a cozy life-sim interface than a sterile management
+application.
+
+Target qualities:
+
+- soft shapes and rounded panels
+- friendly iconography
+- playful but readable typography choices
+- warm, inviting color accents
+- clear hierarchy without "control room" aesthetics
+- a polished, Sims-like friendliness rather than industrial simulation UI
+
+This means:
+
+- panels should feel like lightweight cards, tabs, trays, or bubbles
+- heavy spreadsheet-style layouts should be avoided in standard play
+- warnings should feel supportive and gently instructive rather than alarming
+- observer mode should be especially minimal and calm
 
 ## Primary navigation structure
 
@@ -80,11 +103,46 @@ Recommended mode cards:
 - message: start small and build a breeding business
 - emphasize: money, species unlocks, progression
 - show: requires account or account prompt if needed
+- allow director-style selection before or during setup
 
 ### Observer mode card
 
 - message: watch and explore public aquariums
 - emphasize: featured tanks, creators, ambient viewing
+
+## 2A. Director style selection
+
+Players should be able to choose the tone of the AI director much like selecting a
+storyteller or experience profile in a simulation game.
+
+Recommended early presentation:
+
+- as part of career setup
+- editable later from settings or tank-management preferences
+- described in player-friendly language rather than abstract difficulty jargon
+
+Candidate presentation styles:
+
+### Cozy / Good Vibes
+
+- minimal pressure
+- gentle reminders
+- fewer disruptive setbacks
+- ideal for zen players and showcase-oriented play
+
+### Balanced
+
+- moderate challenge
+- standard pacing
+- supportive but not passive
+
+### Hardcore Breeder
+
+- sharper economic pressure
+- stronger realism consequences
+- intended for players who want a more demanding simulation
+
+The language should stay warm and inviting even for higher-pressure options.
 
 ## 3. Sandbox flow
 
@@ -112,6 +170,13 @@ Key panels or actions:
 - edit mode toggle
 - side-view preview
 - share/public toggle for eligible users
+
+Sandbox should feel especially low-pressure, with:
+
+- minimal warning noise
+- gentle suggestion language
+- easy hiding/collapsing of editing panels
+- a presentation mode that can leave the tank mostly unobstructed
 
 ## 4. Career flow
 
@@ -141,6 +206,16 @@ The main career dashboard should allow players to:
 - buy equipment/decor
 - switch between aquariums
 
+Career mode may show owner-only management tools such as:
+
+- pH indicator
+- water temperature gauge
+- cleanliness meter
+- fish health indicators
+- breeding readiness or compatibility warnings
+
+These tools are meant for the owner and should not appear in observer mode.
+
 ## 5. Observer / Explore flow
 
 Recommended explore entry points:
@@ -160,6 +235,28 @@ Each public tank page should include:
 - style/theme tags
 - likes/follows/comments actions when enabled
 
+### Observer presentation rule
+
+Observer mode should avoid cluttering the tank with owner-management UI.
+
+Do show:
+
+- tank title and creator
+- species summary
+- style/theme information
+- social actions
+
+Do not show by default:
+
+- pH gauges
+- owner health overlays
+- breeding panels
+- maintenance warnings
+- economy metrics
+
+Observer mode should feel capable of becoming a relaxing "aquarium screensaver"
+experience.
+
 ## 6. Aquarium screen structure
 
 The aquarium screen should be composed from a few stable zones.
@@ -170,6 +267,12 @@ The aquarium screen should be composed from a few stable zones.
 - fish motion and visible cleanliness state
 - backdrop visible behind content
 - quick controls for pause, feed, inspect, and edit
+
+The viewport should support different chrome levels by mode:
+
+- **career owner view**: richer owner HUD and management tools
+- **sandbox creator view**: lighter creative controls
+- **observer view**: minimal overlays and social chrome only
 
 ### B. Context panel
 
@@ -182,6 +285,9 @@ Switchable by tab:
 - **Breeding**
 - **Warnings**
 
+Panels should feel collapsible and non-oppressive. Default state should prioritize
+the aquarium itself, not bury it under dense management chrome.
+
 ### C. Action bar
 
 Recommended actions:
@@ -191,6 +297,13 @@ Recommended actions:
 - edit tank
 - shop
 - share / publish
+
+In observer mode, the action bar should collapse down to a much lighter strip such as:
+
+- like
+- follow
+- comment
+- view creator
 
 ## 7. Editing flow
 
@@ -238,6 +351,9 @@ Warnings should include:
 - likely cause
 - simple recommended fix
 
+For lower-pressure director styles, warnings should feel more like guidance than
+failure alerts.
+
 ## 9. Progressive disclosure
 
 The UI should avoid dumping all simulation complexity on the player at once.
@@ -247,6 +363,11 @@ Recommended progression:
 - early: simple labels and warnings
 - mid: reveal more detail in care and compatibility panels
 - advanced: expose deeper pedigree, breeding, and analytics tools
+
+This is especially important because the game should support:
+
+- zen players who mostly want a beautiful living tank
+- strategic players who want deeper management detail
 
 ## 10. Guest-to-account conversion points
 
@@ -265,11 +386,18 @@ The first meaningful UI prototype should include:
 
 - landing page
 - mode selection
+- director-style selection
 - guest sandbox entry
 - aquarium viewport
 - edit mode
 - fish/item library panels
 - simple warning panel
 - explore page placeholder
+
+It should also demonstrate:
+
+- a cozy/cartoony UI tone
+- owner-only management gauges in career mode
+- a lighter unobtrusive observer presentation
 
 That would create an implementable end-to-end shell for future agents.
