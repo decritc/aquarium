@@ -399,6 +399,12 @@ Preferred first mood:
 - luminous fish motion without frantic action
 - premium serenity rather than dramatic spectacle
 
+Preferred first hero fish:
+
+- betta as the primary visual focal fish
+- build the composition around one elegant centerpiece fish rather than a busy school
+- let plant structure and hardscape support the betta instead of competing with it
+
 ### B. Mode section visuals
 
 Need at least:

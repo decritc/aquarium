@@ -268,6 +268,7 @@ The first major marketing mood should be:
 
 That means featured showcase assets should favor:
 
+- a **betta-led hero composition**
 - elegant planted compositions
 - premium driftwood and rock layering
 - soft bright aquarium lighting
@@ -288,6 +289,7 @@ Purpose:
 
 - support the handcrafted studio/demo featured tank
 - provide premium marketing capture material
+- support a betta-led planted showcase composition first
 
 Suggested pieces:
 

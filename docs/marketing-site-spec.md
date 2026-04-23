@@ -97,6 +97,12 @@ Preferred mood for the first implementation:
 - soothing, high-trust, premium aquarium atmosphere
 - visually rich but not chaotic
 
+Preferred hero-fish direction for the first implementation:
+
+- lead with a **betta** as the primary visual hero
+- use the fish as the focal point inside a calm planted composition
+- avoid making the first hero rely on a busy school or multi-species chaos
+
 Preferred first implementation format:
 
 - a lightweight cinematic motion loop
