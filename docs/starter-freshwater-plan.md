@@ -222,6 +222,7 @@ be reserved for career-oriented progression or later expansion.
 
 Recommended guest sandbox content:
 
+- all four core starter fish should be placeable immediately on day one
 - preset backdrops
 - a small but satisfying decor and plant library
 - betta

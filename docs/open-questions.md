@@ -85,6 +85,11 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
    - betta display,
    - tropical community,
    - planted showcase
+7. Resolved: guest sandbox day one should allow all four core starter fish:
+   - betta
+   - guppy
+   - neon tetra
+   - panda corydoras
 
 ## Technical decisions
 

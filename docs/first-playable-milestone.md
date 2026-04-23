@@ -101,6 +101,12 @@ Minimum included fish:
 - Neon tetra
 - Panda corydoras
 
+Guest sandbox access rule:
+
+- all four core starter fish above should be placeable in guest sandbox on day one
+- none of the four core starter fish should be held back for account creation in the
+  first implementation
+
 Otocinclus can be included if implementation cost remains reasonable, but may be
 deferred to the next milestone if needed.
 

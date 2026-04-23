@@ -178,7 +178,12 @@ The language should stay warm and inviting even for higher-pressure options.
    - betta display
    - tropical community
    - planted showcase
-3. Enter tank editor with default starter content
+3. Enter tank editor with default starter content, including access to all four
+   core starter fish:
+   - betta
+   - guppy
+   - neon tetra
+   - panda corydoras
 4. Preview tank in side-view
 5. Place decor/fish
 6. Use temporary browser-local save during the session window
