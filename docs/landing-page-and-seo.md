@@ -86,6 +86,8 @@ Recommended visual style:
 - visible fish movement and layered tank depth
 - subtle motion, not distracting chaos
 - intentional framing that highlights the side-view aquarium presentation
+- mostly side-on framing with only a very slight cinematic tilt/parallax bias if it
+  improves polish without misrepresenting the actual in-game presentation
 - for the first implementation, prefer a **calm premium planted-beauty mood** over a
   dramatic or noisy spectacle-first composition
 - frame the scene so the **full aquarium composition reads clearly first**, while the

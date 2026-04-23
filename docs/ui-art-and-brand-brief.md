@@ -414,6 +414,13 @@ Preferred first framing balance:
 - keep the betta clearly legible as the emotional focal point
 - avoid compositions that crop so tightly the scene stops reading as an aquarium
 
+Preferred first camera angle:
+
+- mostly side-on
+- retain the authentic gameplay-side-view identity
+- allow a very slight cinematic tilt or parallax bias to improve depth and premium feel
+- avoid aggressively angled compositions that stop feeling like the actual game
+
 Preferred first plant density:
 
 - **moderate planted richness**

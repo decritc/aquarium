@@ -279,6 +279,7 @@ That means featured showcase assets should favor:
 - rock support as secondary structure rather than the main focal mass
 - **soft daylight aquarium glow** as the dominant lighting feel
 - bright readable shading without showroom harshness
+- a mostly side-on camera with only a slight cinematic tilt/parallax bias
 - clean healthy tank reads
 - beautiful stillness with subtle life, not loud spectacle
 

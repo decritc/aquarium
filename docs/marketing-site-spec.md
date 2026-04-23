@@ -104,6 +104,8 @@ Preferred framing:
 - show enough of the full tank to sell the aquarium fantasy
 - keep the betta clearly readable as the focal point
 - avoid compositions that become only a fish portrait or only an environment shot
+- keep the camera mostly side-on to match the product's true presentation
+- allow only a very slight cinematic tilt or parallax bias to improve premium depth read
 
 Preferred hero-fish direction for the first implementation:
 
