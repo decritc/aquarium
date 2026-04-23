@@ -405,6 +405,13 @@ Preferred first hero fish:
 - build the composition around one elegant centerpiece fish rather than a busy school
 - let plant structure and hardscape support the betta instead of competing with it
 
+Preferred first backdrop treatment:
+
+- soft blue gradient studio backdrop
+- calm, premium, controlled background first
+- use it to support silhouette clarity and a polished browser-game look
+- avoid busy backdrop texture competing with the betta hero fish
+
 ### B. Mode section visuals
 
 Need at least:

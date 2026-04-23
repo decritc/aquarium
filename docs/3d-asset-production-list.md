@@ -269,6 +269,7 @@ The first major marketing mood should be:
 That means featured showcase assets should favor:
 
 - a **betta-led hero composition**
+- a **soft blue gradient studio backdrop** as the first backdrop choice
 - elegant planted compositions
 - premium driftwood and rock layering
 - soft bright aquarium lighting

@@ -120,7 +120,8 @@ Recommended starter kit:
 - small sponge filter
 - floating log hide
 - Anubias or java fern
-- blue gradient or dark blackwater backdrop
+- blue gradient studio backdrop for the first premium showcase direction
+- dark blackwater backdrop as an alternate later mood
 
 ### Tropical community tank
 
