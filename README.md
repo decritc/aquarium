@@ -39,6 +39,8 @@ The product direction is intentionally mode-dependent:
 ## Key documents
 
 - `docs/game-design-document.md` - core product and system design
+- `docs/3d-asset-production-list.md` - concrete 3D asset backlog for first milestones
+- `docs/ui-art-and-brand-brief.md` - logo, icon, UI art, and visual-brand production brief
 - `docs/first-playable-milestone.md` - exact scope, routes, and acceptance criteria for the first playable build
 - `docs/marketing-site-spec.md` - concrete homepage and public-site implementation spec
 - `docs/player-facing-stats.md` - what metrics players should see versus what remains hidden/system-level
