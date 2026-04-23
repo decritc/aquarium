@@ -96,6 +96,7 @@ Preferred mood for the first implementation:
 - elegant planted composition before dramatic spectacle
 - soothing, high-trust, premium aquarium atmosphere
 - visually rich but not chaotic
+- moderate planted richness rather than sparse minimalism or dense jungle overgrowth
 
 Preferred framing:
 

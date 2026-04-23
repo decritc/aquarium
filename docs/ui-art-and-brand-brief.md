@@ -413,6 +413,13 @@ Preferred first framing balance:
 - show enough of the full aquarium to sell the tank-building fantasy
 - keep the betta clearly legible as the emotional focal point
 - avoid compositions that crop so tightly the scene stops reading as an aquarium
+
+Preferred first plant density:
+
+- **moderate planted richness**
+- enough greenery to feel premium and alive
+- not so sparse that the tank feels empty
+- not so lush that the betta loses visual priority
 - avoid compositions so wide that the betta becomes visually anonymous
 
 Preferred first hardscape emphasis:

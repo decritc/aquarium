@@ -274,6 +274,7 @@ That means featured showcase assets should favor:
   still holds the clearest focal emphasis
 - a **soft blue gradient studio backdrop** as the first backdrop choice
 - elegant planted compositions
+- **moderate planted richness** rather than sparse minimalism or dense jungle clutter
 - a **driftwood-led hardscape composition** first
 - rock support as secondary structure rather than the main focal mass
 - soft bright aquarium lighting
