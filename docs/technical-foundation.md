@@ -49,6 +49,8 @@ This is a recommendation, not a final decision.
 - React Three Fiber or Babylon.js for 3D aquarium rendering
 - Zustand or Redux Toolkit for client state
 - Tailwind CSS or a similar pragmatic UI styling solution
+- A fixed side-view 2.5D tank renderer with layered depth rather than a free-camera
+  aquarium explorer for the first implementation
 - Consider WebAssembly selectively for heavy simulation, genetics, or crowd-style
   fish motion only after profiling shows a clear bottleneck
 
@@ -80,8 +82,10 @@ This is a recommendation, not a final decision.
 
 - Guest-accessible local or lightly persisted sandbox
 - Single aquarium with a curated subset of fish and decorations
-- Render fish swimming on simple loops
-- Basic environment controls
+- Render fish swimming on simple loops in a fixed side-view tank
+- Basic environment controls, backdrop selection, and substrate choice
+- Authored decor placement rules for heavy, floating, rooted, and mounted items
+- Visible algae/cleanliness state
 - Upgrade prompts for expanded asset access and additional tanks
 
 ### Phase 3: Account-backed breeder mode
@@ -122,21 +126,26 @@ This is a recommendation, not a final decision.
    The simulation package should be testable without the renderer. Rendering
    should visualize simulation state, not define it.
 
-3. **Client prediction where safe**
+3. **Readable 2.5D presentation**
+   The renderer should prioritize a calm, single side-view framing with layered
+   depth, allowing 3D fish and decor to feel dimensional without requiring a
+   free-look camera.
+
+4. **Client prediction where safe**
    Non-economy actions may feel immediate on the client, but authoritative
    economy and breeding outcomes should be server-backed once multiplayer/public
    persistence exists.
 
-4. **Graceful idle progression**
+5. **Graceful idle progression**
    Offline progress should be computed from timestamps and bounded formulas,
    rather than requiring the simulation to run continuously on the server.
 
-5. **Mode-specific rules over one-size-fits-all design**
+6. **Mode-specific rules over one-size-fits-all design**
    Sandbox, career, and observer mode should share rendering and content systems
    where possible, but they should be allowed to differ in economy rules,
    progression, public visibility, and difficulty tuning.
 
-6. **Adaptive challenge layer**
+7. **Adaptive challenge layer**
    The simulation should allow an AI-director-style balancing layer to adjust
    pressure, recovery opportunities, and challenge intensity so the game remains
    fun for both casual decorators and expert breeders.
@@ -146,6 +155,7 @@ This is a recommendation, not a final decision.
 - Accounts and authentication
 - User profiles and public visibility settings
 - Aquariums and tank layouts
+- Tank backdrop selections and optional user-uploaded backgrounds
 - Fish instances and genealogy
 - Species definitions and compatibility
 - Decorations, filters, substrates, and plants/coral
@@ -168,7 +178,10 @@ The first milestone should likely be a local desktop-web sandbox aquarium with:
 - one guest sandbox tank
 - a curated subset of fish and decorations
 - freshwater only
+- fixed side-view presentation with depth-layered fish and decor
 - simple feeding and happiness stats
+- substrate and built-in backdrop selection
+- visible algae/cleanliness state
 - optional upsell hooks for account upgrade and expanded content
 
 That creates a playable visual target without overcommitting to backend systems.

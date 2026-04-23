@@ -209,6 +209,8 @@ Avoid:
 - Extra save slots or aquarium showcases
 - Premium decor themes
 - Nameplate, lighting, and presentation customization
+- Premium curated backdrop packs
+- Optional account-backed custom backdrop upload slots
 - Optional career currency packs within reasonable caps
 
 ## Social monetization opportunities
@@ -219,6 +221,7 @@ can also include:
 - expanded public profile customization
 - additional featured tank slots
 - premium scene presets and display lighting
+- curated backdrop libraries and themed display sets
 - extra save/export and portfolio-style presentation options
 
 ## Open balancing questions
@@ -229,3 +232,4 @@ can also include:
 - How much randomness should breeding outcomes have?
 - What content should be freshwater-only or saltwater-only?
 - Should sandbox mode unlock everything immediately or through creator presets?
+- Should custom backdrop uploads be premium, account-only, moderated, or some combination?

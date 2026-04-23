@@ -9,10 +9,15 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 1. For guest sandbox users, how large should the free asset catalog be at launch?
 2. Should guests be able to save and return to their sandbox aquarium, or is that
    an account-only feature?
-3. In career mode, should players begin with one starter tank plus optional extra
-   tank purchases, or should all tanks be purchased manually from the beginning?
-4. Should observer interactions such as likes, follows, and comments be available
+3. Should observer interactions such as likes, follows, and comments be available
    immediately, or unlocked in phases after simple public browsing works well?
+4. When should custom backdrop uploads unlock:
+   - account creation,
+   - premium purchase,
+   - creator/showcase tier,
+   - or a later post-launch phase?
+5. Should public tanks with uploaded backdrops require extra moderation or opt-in
+   review before they are shareable?
 
 ## Adaptive challenge and AI director
 
@@ -47,11 +52,19 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 
 ## Fish systems and content
 
-1. What is the first freshwater starter roster?
-2. When should saltwater unlock in career mode?
-3. Which hybridization exceptions should exist beyond strict realism?
-4. How much pedigree detail should be visible on the standard fish card before the
+1. When should saltwater unlock in career mode?
+2. Which hybridization exceptions should exist beyond strict realism?
+3. How much pedigree detail should be visible on the standard fish card before the
    player opens a deeper lineage view?
+4. How strong should cleanup-species benefits be relative to direct player cleaning?
+5. Should algae/detritus be mostly a visual-and-rating system at first, or should it
+   also materially affect fish health and breeding from the beginning?
+6. Which starter tank archetypes should be exposed in guest sandbox on day one:
+   - betta display,
+   - tropical community,
+   - planted showcase,
+   - guppy breeder,
+   - or all of the above?
 
 ## Technical decisions
 
@@ -67,3 +80,5 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
    - breeding timers,
    - fish health,
    - visitor activity?
+4. Should custom backdrop uploads be stored and transformed in the main backend
+   first, or should they be deferred until a dedicated media pipeline exists?

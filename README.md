@@ -42,12 +42,14 @@ The product direction is intentionally mode-dependent:
 - `docs/economy-and-progression.md` - money, premium currency, and progression model
 - `docs/technical-foundation.md` - recommended implementation direction for agents
 - `docs/asset-pipeline.md` - how 3D fish assets and metadata should be organized
+- `docs/starter-freshwater-plan.md` - first roster, tank archetypes, compatibility, and unlock ladder
+- `docs/tank-presentation-and-environment.md` - side-view tank presentation and environment simulation rules
 - `docs/founder-decisions.md` - accepted answers to the initial design questionnaire
 - `docs/open-questions.md` - decisions still unresolved or intentionally deferred
 
 ## Next steps
 
-1. Convert the founder decisions into concrete species, tank, and progression specs.
+1. Finalize the first freshwater starter roster and progression pacing.
 2. Define the first implementation milestone in enough detail to build it.
 3. Design the fish genetics system as a layered system that can grow over time.
 4. Add early concept assets and example fish metadata JSON files.

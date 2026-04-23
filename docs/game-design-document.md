@@ -42,6 +42,12 @@ Tanks should feel active and soothing even when the player is not making direct
 inputs. Fish movement, schooling, idling, feeding, and tank ambience should make
 the aquarium enjoyable to watch.
 
+### Presentation target
+
+The game should present tanks primarily from a fixed side-view camera. Fish and
+decor should still be 3D and depth-aware, but the viewing experience should feel
+like a polished aquarium diorama rather than a free-roam camera simulation.
+
 ### 2. Meaningful progression
 
 Career mode should reward long-term planning. Players start with constrained
@@ -189,6 +195,32 @@ Each aquarium should be defined by:
 - Filters, heaters, lights, and other equipment
 - Fish population
 - Water condition metrics
+- Backdrop selection
+- Cleanliness/algae state
+
+### Tank archetypes
+
+Early design and progression should explicitly support multiple tank archetypes:
+
+- **Betta display tank** for a single centerpiece fish
+- **Tropical community tank** for layered peaceful stocking
+- **Breeder utility tank** for profit-focused setups with lighter decoration
+- **Cleanup-assisted planted tank** where ecological balance matters
+
+See `docs/starter-freshwater-plan.md` for the current first-pass archetypes.
+
+### Presentation layers
+
+Tank presentation should use layered content that remains readable from a single
+side angle:
+
+1. backdrop layer
+2. rear decor layer
+3. midground fish/gameplay layer
+4. foreground decor layer
+5. substrate/ground-cover layer
+
+This should allow depth, parallax, and lighting without requiring a moving camera.
 
 ## Fish systems
 
@@ -268,6 +300,7 @@ This means the content model should encode:
 - school size preferences
 - aggression/territoriality
 - explicit tankmate restrictions and conflict tags
+- cleanup roles such as algae-grazer or detritus-scavenger
 
 ### Behavioral authenticity
 
@@ -283,6 +316,19 @@ Examples of expected behavior:
 
 The first implementation does not need full biological realism, but species should
 have authored behavior profiles that make common aquarium knowledge legible in play.
+
+### Ecological roles and maintenance support
+
+Some fish should contribute to the health and readability of a tank ecosystem.
+Examples include:
+
+- algae grazers that reduce algae pressure
+- bottom scavengers that reduce leftover waste pressure
+- peaceful schooling fish that improve the look and behavior of community tanks
+- territorial display fish that create strong solo-tank identity
+
+These support roles should matter, but they should never replace active player
+maintenance entirely.
 
 ## Economy overview
 
@@ -350,6 +396,9 @@ Recommended early simulation layers:
 - Basic compatibility rules
 - Bounded offline catch-up
 - Simple species-authored aggression and schooling behavior
+- Visible algae and cleanliness state
+- Cleanup-role effects on waste or algae pressure
+- Authored decor placement rules such as heavy, rooted, floating, or mounted
 
 Defer deeper realism unless it strengthens gameplay:
 
@@ -374,6 +423,9 @@ Candidate first version:
 - Comments
 - Search by owner, tags, species, and popularity
 
+Public/shared tanks should also consider moderation implications for custom
+background uploads before those uploads are broadly enabled.
+
 ## Live operations opportunities
 
 Potential future content cadence:
@@ -386,13 +438,15 @@ Potential future content cadence:
 The smallest meaningful playable version should likely include:
 
 1. Desktop web delivery
-2. One guest-accessible sandbox tank with a curated asset set
+2. One guest-accessible fixed side-view sandbox tank with a curated asset set
 3. GLB-based fish model loading with metadata-driven configuration
 4. A small set of freshwater fish species
-5. Buy/place fish and decorations in at least one mode
-6. Fish idle movement
-7. Basic breeding and offspring generation for career mode
-8. Public sharing for a single opt-in tank
+5. Built-in background selection and substrate selection
+6. Buy/place fish and decorations in at least one mode
+7. Fish idle movement with authored species behavior differences
+8. Visible cleanliness or algae state
+9. Basic breeding and offspring generation for career mode
+10. Public sharing for a single opt-in tank
 
 ## Risks to manage
 

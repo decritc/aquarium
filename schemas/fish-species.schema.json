@@ -288,6 +288,59 @@
         }
       }
     },
+    "ecosystem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "display-fish",
+              "schooling-fish",
+              "cleanup-crew",
+              "algae-grazer",
+              "bottom-scavenger",
+              "breeder-staple",
+              "centerpiece",
+              "territorial"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "contributions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "strength"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "algae-reduction",
+                  "detritus-reduction",
+                  "leftover-food-reduction",
+                  "comfort-boost",
+                  "showcase-appeal"
+                ]
+              },
+              "strength": {
+                "type": "string",
+                "enum": ["low", "medium", "high"]
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "maintenanceNotes": {
+          "type": "string"
+        }
+      }
+    },
     "breeding": {
       "type": "object",
       "additionalProperties": false,

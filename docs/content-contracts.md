@@ -8,6 +8,7 @@ The system is intentionally split into multiple layers:
 - **Fish model metadata** describes rendering assets and animation files
 - **Fish species data** describes simulation, compatibility, and breeding rules
 - **Tank item data** describes decor, equipment, plants, and structural items
+- **Tank backdrop data** describes curated background images and upload behavior
 - **Progression unlock data** describes how content becomes available by mode
 
 This separation keeps the project data-driven while allowing the art pipeline to
@@ -120,8 +121,29 @@ Examples:
 - caves and plants increase shelter value
 - coral and reef structures affect habitat suitability for saltwater species
 - themed decorations primarily affect aesthetics and tank rating
+- heavy decor can snap toward the floor while floating decor stays near the surface
+- substrate and plant items can influence algae growth, cover, and cleanup balance
 
-## 4. Progression unlock content
+## 4. Tank backdrop content
+
+Schema:
+
+- `schemas/tank-backdrop.schema.json`
+
+Purpose:
+
+- define built-in backdrop images and style presets
+- control whether a backdrop is curated, premium, or player-upload-compatible
+- keep side-view tank presentation and showcase theming data-driven
+
+Examples:
+
+- natural riverbed scenes
+- rockwall or planted-tank presets
+- premium decorative showcase backgrounds
+- account-backed custom upload slots with moderation constraints
+
+## 5. Progression unlock content
 
 Schema:
 
@@ -157,6 +179,9 @@ packages/content/
     equipment/
     plants/
     substrate/
+  tank-backdrops/
+    curated/
+    premium/
   progression/
     sandbox/
     career/
@@ -183,6 +208,13 @@ packages/content/
 - What can the player place?
 - Where can it be placed?
 - Does it affect care, shelter, compatibility, or aesthetics?
+- Is it heavy, floating, mounted, rooted, or otherwise placement-constrained?
+
+### Tank backdrop data should answer:
+
+- What background can appear behind the tank?
+- Is it built-in, premium, or uploaded by the player?
+- What aspect ratio, mood, or theme tags does it support?
 
 ### Progression data should answer:
 

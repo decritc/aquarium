@@ -38,6 +38,7 @@ The content package should distinguish between:
 - **asset metadata**: how a model or texture is loaded
 - **species definitions**: how a fish behaves and what it needs
 - **tank item definitions**: what decor or equipment does in the simulation
+- **tank backdrop definitions**: what built-in or uploaded backgrounds are allowed
 - **progression definitions**: how content is unlocked in different modes
 
 In a future implementation phase, the package should export typed content that can

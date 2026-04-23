@@ -45,7 +45,7 @@
     "placement": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["allowedTankEnvironments", "surface"],
+      "required": ["allowedTankEnvironments", "surface", "placementBehavior"],
       "properties": {
         "allowedTankEnvironments": {
           "type": "array",
@@ -72,6 +72,10 @@
         "surface": {
           "type": "string",
           "enum": ["bottom", "midwater", "background", "free-floating", "equipment-slot"]
+        },
+        "placementBehavior": {
+          "type": "string",
+          "enum": ["heavy", "floating", "rooted", "mounted", "free-place", "backdrop-only"]
         },
         "footprint": {
           "type": "object",
@@ -131,6 +135,23 @@
             "type": "string"
           }
         },
+        "cleanliness": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["metric", "modifier"],
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": ["algae-growth", "detritus-buildup", "glass-dirt", "maintenance-load"]
+              },
+              "modifier": {
+                "type": "number"
+              }
+            }
+          }
+        },
         "tankStats": {
           "type": "array",
           "items": {
@@ -146,7 +167,8 @@
                   "water-clarity",
                   "oxygenation",
                   "breeding-confidence",
-                  "visitor-appeal"
+                  "visitor-appeal",
+                  "temperature-stability"
                 ]
               },
               "modifier": {
@@ -232,6 +254,9 @@
           "type": "string"
         },
         "thumbnailPath": {
+          "type": "string"
+        },
+        "backdropImagePath": {
           "type": "string"
         }
       }
