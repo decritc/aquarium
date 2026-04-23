@@ -104,6 +104,7 @@ Should feel:
 - premium
 - memorable
 - easy to read at medium size
+- built around a hybrid aquarium identity rather than a single isolated motif
 
 ### B. Wordmark
 
@@ -124,15 +125,27 @@ Use:
 ### Recommendations
 
 - favor a clean iconic silhouette
+- the current preferred direction is a **hybrid of fish + tank/water**
+- the mark should suggest both:
+  - a living fish or tail/silhouette cue, and
+  - an aquarium/water cue such as a glass curve, waterline, ripple, or caustic arc
 - subtle aquatic motifs are good
-- fish tail, waterline, tank glass curve, pearl, ripple, leaf, or light-caustic
-  motifs could work
 - keep it simple enough to survive small sizes
+- prioritize one cohesive hybrid symbol over a collage of separate icons
+
+Preferred exploration directions:
+
+1. fish tail integrated into a tank-glass curve
+2. fish silhouette crossing a subtle waterline
+3. a rounded tank/window shape with an embedded fish-motion sweep
+4. a pearl/ripple accent only if it remains secondary to the fish+tank identity
 
 Avoid:
 
 - overly detailed logo illustration
 - hyper-generic wave swooshes
+- pure abstract water marks with no fish/aquarium connection
+- fish-only mascots that lose the aquarium identity
 - unreadable script lettering
 
 ## 2. Typography direction

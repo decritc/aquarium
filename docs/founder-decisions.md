@@ -261,6 +261,22 @@ Implication:
 - performance work is part of the core architecture, not a late optimization pass
 - rendering and simulation choices must respect browser constraints from the start
 
+### 25. Brand mark direction should be hybrid, not single-motif
+
+The primary brand mark should lean toward a **balanced hybrid of fish + tank/water**
+rather than a pure fish silhouette or a generic abstract wave.
+
+Design intent:
+
+- connect the aquarium fantasy and the product identity in one mark
+- stay simple and legible at favicon/app-icon sizes
+- feel premium, calm, and memorable
+
+Implication:
+
+- logo exploration should prioritize hybrid concepts first
+- avoid drifting into generic wave marks or overly detailed fish illustrations
+
 ## Key implementation implications
 
 1. Build the product around distinct mode entry points rather than one unified
