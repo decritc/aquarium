@@ -277,7 +277,8 @@ That means featured showcase assets should favor:
 - **moderate planted richness** rather than sparse minimalism or dense jungle clutter
 - a **driftwood-led hardscape composition** first
 - rock support as secondary structure rather than the main focal mass
-- soft bright aquarium lighting
+- **soft daylight aquarium glow** as the dominant lighting feel
+- bright readable shading without showroom harshness
 - clean healthy tank reads
 - beautiful stillness with subtle life, not loud spectacle
 

@@ -422,6 +422,14 @@ Preferred first plant density:
 - not so lush that the betta loses visual priority
 - avoid compositions so wide that the betta becomes visually anonymous
 
+Preferred first lighting mood:
+
+- **soft daylight aquarium glow**
+- bright and clean without harsh showroom glare
+- gentle top light with soft fill and underwater bounce
+- serene premium readability over dramatic contrast
+- avoid theatrical darkness or overly punchy commercial lighting
+
 Preferred first hardscape emphasis:
 
 - driftwood-led composition first

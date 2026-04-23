@@ -97,6 +97,7 @@ Preferred mood for the first implementation:
 - soothing, high-trust, premium aquarium atmosphere
 - visually rich but not chaotic
 - moderate planted richness rather than sparse minimalism or dense jungle overgrowth
+- soft daylight aquarium glow rather than moody gallery darkness or harsh showroom brightness
 
 Preferred framing:
 
