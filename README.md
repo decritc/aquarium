@@ -39,6 +39,10 @@ The product direction is intentionally mode-dependent:
 ## Key documents
 
 - `docs/game-design-document.md` - core product and system design
+- `docs/first-playable-milestone.md` - exact scope, routes, and acceptance criteria for the first playable build
+- `docs/marketing-site-spec.md` - concrete homepage and public-site implementation spec
+- `docs/player-facing-stats.md` - what metrics players should see versus what remains hidden/system-level
+- `docs/screen-wireframes.md` - low-fidelity screen-by-screen layout planning
 - `docs/landing-page-and-seo.md` - premium web landing page, discoverability, and SEO strategy
 - `docs/browser-performance-and-rendering.md` - browser rendering quality and performance strategy
 - `docs/tank-simulation-spec.md` - first-pass simulation rules, metrics, and placement-mode model
@@ -55,8 +59,8 @@ The product direction is intentionally mode-dependent:
 
 ## Next steps
 
-1. Turn the current simulation and UI planning into an exact first playable milestone spec.
-2. Define the premium web landing page and first marketing/presentation assets.
-3. Validate starter content and rendering plans against browser performance targets.
-4. Design the fish genetics system as a layered system that can grow over time.
-5. Add early concept assets and example fish metadata JSON files.
+1. Refine the first playable milestone and marketing-site specs based on follow-up product decisions.
+2. Validate starter content and rendering plans against browser performance targets.
+3. Design the fish genetics system as a layered system that can grow over time.
+4. Add early concept assets and example fish metadata JSON files.
+5. Begin app and marketing-site scaffolding against the implementation specs.
