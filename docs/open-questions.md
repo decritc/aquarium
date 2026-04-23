@@ -49,12 +49,8 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
    - aquarium-themed but still fairly minimal
    - highly decorative and playful
    - hybrid: playful shell with simplified panels
-2. How much owner-only information should appear on the main career tank view by
-   default?
-   - compact gauges only
-   - compact gauges plus warnings
-   - richer management HUD
-   - customizable HUD by player
+2. Resolved: the default career tank view should use **compact owner gauges plus
+   warnings** rather than a dense management HUD.
 3. In observer mode, how minimal should the visible HUD be?
    - almost none, just tank and social actions
    - light tank identity and species info

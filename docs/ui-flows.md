@@ -251,6 +251,12 @@ Career mode may show owner-only management tools such as:
 - fish health indicators
 - breeding readiness or compatibility warnings
 
+Default career HUD recommendation:
+
+- compact gauges plus warnings
+- lightweight enough to preserve the aquarium as the visual focus
+- expandable later for deeper management, but not dense by default
+
 These tools are meant for the owner and should not appear in observer mode.
 
 ## 5. Observer / Explore flow
@@ -260,6 +266,12 @@ Recommended explore entry points:
 - featured aquarium first
 - broader tank discovery later
 - trending/recent/species search as later expansion
+
+Rollout rule:
+
+- once there are roughly 10+ public/observable user tanks, observer mode should
+  graduate from single-featured-only into a lightweight discoverability surface
+  with browsing support
 
 Each public tank page should include:
 

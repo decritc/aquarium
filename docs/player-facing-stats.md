@@ -38,6 +38,12 @@ Hide or soften:
 Career should reveal more management information, but still in a player-friendly
 way.
 
+Default first implementation recommendation:
+
+- **compact gauges plus warnings**
+- enough information to support decisions without turning the tank view into a
+  hard management dashboard
+
 Show:
 
 - habitat match

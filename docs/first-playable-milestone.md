@@ -142,11 +142,17 @@ Required shape:
 - observer-safe minimal HUD
 - enough quality to support landing-page screenshots and CTA handoff
 
-Deferred:
+Deferred until public-tank volume justifies it:
 
 - full gallery or feed
 - search and filters
 - broad creator discovery
+
+Rollout rule:
+
+- once there are roughly **10 or more public/observable tanks**, observer mode
+  should graduate from a single featured tank toward a real discoverability
+  layer
 
 This is important because the product will be marketed partly through beautiful
 tank viewing.

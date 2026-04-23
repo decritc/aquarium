@@ -269,4 +269,6 @@ Implication:
    presentation from the beginning.
 6. Treat landing-page quality, SEO, and browser performance as core product
    requirements rather than polish.
-7. Keep the premium model sustainable without making the experience feel paywalled.
+7. Treat "public" as meaning "observable by others," and expand observer
+   discoverability once there is enough public content density to justify it.
+8. Keep the premium model sustainable without making the experience feel paywalled.
