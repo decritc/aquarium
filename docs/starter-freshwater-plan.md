@@ -211,11 +211,14 @@ path.
 ### Guest sandbox
 
 Guest sandbox should allow one tank slot, but the player should be able to choose a
-starting template such as:
+starting template from exactly these three day-one options:
 
 - betta display tank
 - tropical community tank
 - planted showcase tank
+
+The guppy breeder setup should remain outside the guest day-one template list and
+be reserved for career-oriented progression or later expansion.
 
 Recommended guest sandbox content:
 

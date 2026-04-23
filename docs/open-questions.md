@@ -83,12 +83,10 @@ first founder questionnaire was answered. Confirmed decisions are recorded in
 4. How strong should cleanup-species benefits be relative to direct player cleaning?
 5. Should algae/detritus be mostly a visual-and-rating system at first, or should it
    also materially affect fish health and breeding from the beginning?
-6. Which starter tank archetypes should be exposed in guest sandbox on day one:
+6. Resolved: guest sandbox day one should expose three templates:
    - betta display,
    - tropical community,
-   - planted showcase,
-   - guppy breeder,
-   - or all of the above?
+   - planted showcase
 
 ## Technical decisions
 

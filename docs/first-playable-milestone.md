@@ -66,7 +66,10 @@ Must include:
 
 - one guest-accessible sandbox tank
 - no required account to begin
-- starter template selection
+- starter template selection with exactly three day-one options:
+  - betta display
+  - tropical community
+  - planted showcase
 - tank naming
 - fish placement
 - decor placement
@@ -178,7 +181,10 @@ These can be planned, but they should not block the milestone.
 
 ### Guest sandbox flow
 
-1. Choose starter template
+1. Choose one of three starter templates:
+   - betta display
+   - tropical community
+   - planted showcase
 2. Enter aquarium screen
 3. Inspect tank in side view
 4. Enter edit mode
