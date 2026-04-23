@@ -403,6 +403,8 @@ Preferred first hero fish:
 
 - betta as the primary visual focal fish
 - specifically a flowing long-fin show betta as the canonical hero version
+- prefer a jewel-toned teal / turquoise body with coral-red fin accents as the
+  first canonical colorway
 - build the composition around one elegant centerpiece fish rather than a busy school
 - let plant structure and hardscape support the betta instead of competing with it
 

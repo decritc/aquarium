@@ -67,6 +67,7 @@ These are the assets most important to unblock the first meaningful build.
   - tests territorial display behavior and surface-focused motion
 - Recommended notes:
   - flowing long-fin show male presentation first
+  - canonical hero colorway: teal / turquoise dominant body with coral-red fin accents
   - support calm cruise plus threat-display animation if possible
 
 ### 2. Guppy

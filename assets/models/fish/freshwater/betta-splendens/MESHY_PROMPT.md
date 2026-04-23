@@ -42,6 +42,12 @@ Create a healthy, elegant male betta with:
 - strong side-view readability
 - slightly stylized proportions that improve beauty without becoming fantasy
 
+Canonical first colorway:
+
+- jewel-toned teal / turquoise dominant body
+- coral-red fin accents as the primary secondary color
+- subtle iridescent transitions that stay bright and premium rather than muddy
+
 Recommended coloration:
 
 - jewel-toned teal / turquoise primary body
