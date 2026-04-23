@@ -405,6 +405,13 @@ Preferred first hero fish:
 - build the composition around one elegant centerpiece fish rather than a busy school
 - let plant structure and hardscape support the betta instead of competing with it
 
+Preferred first hardscape emphasis:
+
+- driftwood-led composition first
+- use one elegant root/branch form as the structural centerpiece
+- let rocks support composition second rather than dominate it
+- keep the hardscape soft, organic, and planted-tank friendly
+
 Preferred first backdrop treatment:
 
 - soft blue gradient studio backdrop

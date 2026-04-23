@@ -271,7 +271,8 @@ That means featured showcase assets should favor:
 - a **betta-led hero composition**
 - a **soft blue gradient studio backdrop** as the first backdrop choice
 - elegant planted compositions
-- premium driftwood and rock layering
+- a **driftwood-led hardscape composition** first
+- rock support as secondary structure rather than the main focal mass
 - soft bright aquarium lighting
 - clean healthy tank reads
 - beautiful stillness with subtle life, not loud spectacle
@@ -298,6 +299,12 @@ Suggested pieces:
 - one tall statement decor piece
 - one layered rock composition
 - one premium planted cluster
+
+Preferred composition rule for the first showcase:
+
+- lead with driftwood as the main structural focal point
+- use rock only as supporting balance and base weight
+- preserve open negative space around the betta hero silhouette
 
 ### 24. Additional plant variations
 
