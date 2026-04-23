@@ -46,7 +46,8 @@ or partially stubbed if needed, but the visitor must be able to:
 Must include:
 
 - premium landing page
-- hero section with strong aquarium visual
+- hero section with a strong aquarium visual, implemented as a lightweight
+  cinematic motion loop rather than a heavy interactive 3D hero
 - clear value proposition
 - `Start Free Sandbox` primary CTA
 - `Watch Public Aquariums` secondary CTA or placeholder route

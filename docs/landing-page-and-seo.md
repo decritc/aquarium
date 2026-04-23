@@ -74,6 +74,12 @@ Recommended contents:
 - secondary CTA such as `Watch Public Aquariums`
 - premium visual treatment using in-engine renders, captured gameplay, or approved art
 
+Recommended first-implementation format:
+
+- a lightweight cinematic motion loop as the primary hero treatment
+- not a static-only hero if motion can be delivered well
+- not a heavy interactive 3D hero that risks harming first-load performance
+
 Recommended visual style:
 
 - real tank scene or polished composite built from real game assets

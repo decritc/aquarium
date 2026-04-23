@@ -79,7 +79,8 @@ Required contents:
 - short benefit-led subheadline
 - primary CTA: `Start Free Sandbox`
 - secondary CTA: `Watch Public Aquariums`
-- hero visual built from real assets or polished in-engine capture
+- hero visual built as a lightweight cinematic motion loop from real assets or
+  polished in-engine capture
 
 Hero visual requirements:
 
@@ -88,6 +89,13 @@ Hero visual requirements:
 - visible fish motion or motion implication
 - premium art direction
 - no placeholder visual treatment
+
+Preferred first implementation format:
+
+- a lightweight cinematic motion loop
+- short, art-directed, and highly compressed
+- able to fall back gracefully to a poster image
+- not a heavy interactive 3D hero as the default landing treatment
 
 ## 2. Modes section
 

@@ -200,6 +200,8 @@ Recommendations:
 
 - SSR or statically generated shell for strong first paint and SEO
 - hero media optimized aggressively
+- prefer a lightweight cinematic motion loop for the first hero treatment rather than
+  a static-only hero or a heavy interactive real-time 3D scene
 - responsive image strategy
 - avoid blocking the initial render on heavy interactive 3D content
 

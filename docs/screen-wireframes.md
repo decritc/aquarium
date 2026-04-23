@@ -23,7 +23,7 @@ future agents can scaffold pages and major UI zones without inventing the IA.
   [subheadline] Design cozy tanks, breed rare fish, and explore player-made aquariums.
   [cta primary] Start Free Sandbox
   [cta secondary] Watch Public Aquariums
-  [hero media] premium aquarium visual / loop / screenshot
+  [hero media] lightweight cinematic aquarium motion loop
 
 [modes section]
   [card] Sandbox
