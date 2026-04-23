@@ -66,7 +66,7 @@ These are the assets most important to unblock the first meaningful build.
   - ideal for landing-page and observer captures
   - tests territorial display behavior and surface-focused motion
 - Recommended notes:
-  - long-fin male presentation first
+  - flowing long-fin show male presentation first
   - support calm cruise plus threat-display animation if possible
 
 ### 2. Guppy

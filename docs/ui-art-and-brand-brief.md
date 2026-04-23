@@ -402,6 +402,7 @@ Preferred first mood:
 Preferred first hero fish:
 
 - betta as the primary visual focal fish
+- specifically a flowing long-fin show betta as the canonical hero version
 - build the composition around one elegant centerpiece fish rather than a busy school
 - let plant structure and hardscape support the betta instead of competing with it
 
