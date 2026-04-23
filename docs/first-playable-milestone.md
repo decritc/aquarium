@@ -137,6 +137,7 @@ observer destination.
 Required shape:
 
 - one featured aquarium route or page
+- one handcrafted studio/demo tank as the source content for that route
 - read-only "public aquarium style" presentation
 - observer-safe minimal HUD
 - enough quality to support landing-page screenshots and CTA handoff

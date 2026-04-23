@@ -40,6 +40,14 @@ experience** rather than a full browse grid. That keeps the landing-page flow
 premium and focused while the broader observer/discovery system is still being
 built.
 
+That featured aquarium should be a **handcrafted studio/demo tank**, not a live
+player tank. This guarantees:
+
+- premium art direction
+- consistent quality for screenshots and trailers
+- no dependency on account/public-tank systems
+- a reliable observer destination from day one
+
 ## Site map for first implementation
 
 The first implementation should support at least these public pages:

@@ -156,12 +156,12 @@ future agents can scaffold pages and major UI zones without inventing the IA.
 
 [main content]
   [viewport]
-    side-view aquarium
+    side-view featured studio/demo aquarium
     minimal unobtrusive chrome
 
   [light info card]
     tank title
-    owner
+    studio/demo attribution
     species summary
     theme tags
 

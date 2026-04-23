@@ -299,6 +299,12 @@ Why:
 - lower discovery/backend complexity for the first release
 - still proves the observer fantasy clearly
 
+Source for the first implementation:
+
+- use a handcrafted studio/demo tank
+- do not depend on live player-published aquariums yet
+- art-direct it to a premium visual standard suitable for screenshots and hero-adjacent marketing use
+
 ## 6. Aquarium screen structure
 
 The aquarium screen should be composed from a few stable zones.
