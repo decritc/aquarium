@@ -429,6 +429,13 @@ Preferred first plant density:
 - not so lush that the betta loses visual priority
 - avoid compositions so wide that the betta becomes visually anonymous
 
+Preferred first substrate:
+
+- **planted dark soil**
+- rich dark base that helps plants and betta colors stand out
+- premium planted-tank feel rather than bright decorative gravel first
+- should support the calm, elegant, high-end showcase mood
+
 Preferred first lighting mood:
 
 - **soft daylight aquarium glow**

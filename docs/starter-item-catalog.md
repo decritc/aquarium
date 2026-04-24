@@ -115,7 +115,8 @@ This means an implementation can:
 
 Recommended starter kit:
 
-- natural gravel or planted substrate
+- planted dark soil for the first premium showcase direction
+- natural gravel as a simpler alternate
 - basic tropical heater
 - small sponge filter
 - floating log hide
