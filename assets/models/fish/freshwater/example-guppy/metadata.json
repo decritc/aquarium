@@ -1,0 +1,43 @@
+{
+  "id": "example-guppy",
+  "speciesDefinitionId": "guppy",
+  "displayName": "Example Guppy",
+  "scientificName": "Poecilia reticulata",
+  "environment": "freshwater",
+  "speciesGroup": "livebearer",
+  "sources": {
+    "modelAuthor": "placeholder",
+    "notes": "Example metadata contract for future fish assets."
+  },
+  "modelFiles": {
+    "scene": "model.glb",
+    "previewImage": "preview.png"
+  },
+  "animationClips": [
+    {
+      "name": "Swim_Idle",
+      "loop": true,
+      "purpose": "cruise",
+      "notes": "Default cruising animation."
+    },
+    {
+      "name": "Swim_Turn_Left",
+      "loop": false,
+      "purpose": "turn-left"
+    },
+    {
+      "name": "Swim_Turn_Right",
+      "loop": false,
+      "purpose": "turn-right"
+    }
+  ],
+  "renderHints": {
+    "approximateLengthMeters": 0.05,
+    "defaultCruiseAnimation": "Swim_Idle",
+    "turnLeftAnimation": "Swim_Turn_Left",
+    "turnRightAnimation": "Swim_Turn_Right",
+    "preferredSwimZone": "mid",
+    "minSchoolSpacingMeters": 0.04,
+    "silhouetteTags": ["short-fins", "small-bodied"]
+  }
+}

@@ -1,0 +1,52 @@
+# Content Package Placeholder
+
+This package will eventually contain structured game data such as:
+
+- fish species definitions
+- rarity tiers
+- genetics traits
+- decoration items
+- tank equipment
+- shop inventories
+- economy balance tables
+- progression unlock tracks
+
+## Planned content contract layout
+
+```text
+packages/content/
+  fish-species/
+    freshwater/
+      betta-splendens.json
+      guppy.json
+      neon-tetra.json
+  tank-items/
+    decor/
+      floating-log-hide.json
+    equipment/
+      basic-sponge-filter.json
+    plants/
+      java-fern.json
+    substrate/
+      fine-gravel-brown.json
+  tank-backdrops/
+    curated/
+      soft-blue-gradient.json
+  progression/
+    career/
+      freshwater-starter-bundle.json
+    sandbox/
+      guest-starter-set.json
+```
+
+The content package should distinguish between:
+
+- **asset metadata**: how a model or texture is loaded
+- **species definitions**: how a fish behaves and what it needs
+- **tank item definitions**: what decor or equipment does in the simulation
+- **tank backdrop definitions**: what built-in or uploaded backgrounds are allowed
+- **progression definitions**: how content is unlocked in different modes
+
+In a future implementation phase, the package should export typed content that can
+be shared by the web client, simulation logic, admin tooling, and backend
+services.

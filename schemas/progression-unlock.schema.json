@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/progression-unlock.schema.json",
+  "title": "ProgressionUnlock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "mode",
+    "unlockType",
+    "requirements"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["sandbox", "career", "observer", "shared"]
+    },
+    "targetType": {
+      "type": "string",
+      "enum": [
+        "fish-species",
+        "tank-item",
+        "tank-slot",
+        "tank-size",
+        "feature-flag",
+        "environment",
+        "bundle"
+      ]
+    },
+    "targetId": {
+      "type": "string"
+    },
+    "unlockType": {
+      "type": "string",
+      "enum": [
+        "default",
+        "level",
+        "purchase",
+        "achievement",
+        "bundle",
+        "premium-entitlement",
+        "manual"
+      ]
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minimumPlayerLevel": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minimumCareerReputation": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "requiredCurrencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["currencyId", "amount"],
+            "properties": {
+              "currencyId": { "type": "string" },
+              "amount": { "type": "number", "minimum": 0 }
+            }
+          }
+        },
+        "requiredUnlockIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "requiredAchievementIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "requiredTankEnvironment": {
+          "type": "string",
+          "enum": ["freshwater", "saltwater", "brackish", "fantasy"]
+        },
+        "requiredAccountTier": {
+          "type": "string",
+          "enum": ["guest", "free", "premium", "lifetime"]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "rewards": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fishSpeciesIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tankItemIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tankSlotCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tankSizes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "featureFlags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "currencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["currencyId", "amount"],
+            "properties": {
+              "currencyId": { "type": "string" },
+              "amount": { "type": "number", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "visibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "showInCatalogBeforeUnlock": { "type": "boolean" },
+        "showUnlockHint": { "type": "boolean" },
+        "hiddenUntilEligible": { "type": "boolean" }
+      }
+    },
+    "monetization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "isPremiumOption": { "type": "boolean" },
+        "isGuestUpgradePrompt": { "type": "boolean" },
+        "bundleId": { "type": "string" }
+      }
+    }
+  }
+}

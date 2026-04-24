@@ -1,0 +1,97 @@
+{
+  "id": "guppy",
+  "displayName": "Guppy",
+  "scientificName": "Poecilia reticulata",
+  "classification": {
+    "environment": "freshwater",
+    "climate": "tropical",
+    "speciesGroup": "livebearer",
+    "rarityTier": "common"
+  },
+  "habitat": {
+    "minimumTankSizeGallons": 10,
+    "temperatureCelsius": {
+      "min": 22,
+      "max": 28
+    },
+    "phRange": {
+      "min": 6.8,
+      "max": 8.0
+    },
+    "salinityPpt": {
+      "min": 0,
+      "max": 2
+    },
+    "waterFlow": "low",
+    "tankZone": ["upper", "mid"],
+    "minimumGroupSize": 3,
+    "maximumGroupSize": 20,
+    "territorialSpaceGallons": 0.5,
+    "hardscapePreferences": ["plants", "open-swim-space", "gravel"]
+  },
+  "compatibility": {
+    "temperament": "peaceful",
+    "communitySuitability": "excellent",
+    "withSameSpecies": "schooling",
+    "compatibleSpeciesIds": ["neon-tetra", "corydoras-panda", "otocinclus"],
+    "incompatibleSpeciesIds": ["betta-splendens"],
+    "incompatibleTraits": [
+      {
+        "trait": "territorial",
+        "reason": "Territorial fish may harass guppies, especially long-finned varieties."
+      }
+    ],
+    "notes": "Reliable breeder and community fish, but should not be a default betta tankmate."
+  },
+  "behavior": {
+    "activityLevel": "high",
+    "swimSpeed": "medium",
+    "schooling": "loose",
+    "territoriality": "low",
+    "aggressionTriggers": [],
+    "responseProfile": {
+      "defaultState": "calm",
+      "states": [
+        {
+          "when": "the tank is overcrowded",
+          "behavior": "scatter",
+          "intensity": "medium",
+          "notes": "Overcrowding should make active livebearers feel chaotic and stressed."
+        }
+      ]
+    },
+    "feedingStyle": "midwater"
+  },
+  "ecosystem": {
+    "roles": ["breeder-staple"],
+    "contributions": [
+      {
+        "type": "showcase-appeal",
+        "strength": "low",
+        "notes": "Colorful schools improve tank liveliness."
+      }
+    ],
+    "maintenanceNotes": "Produces more population pressure over time because of rapid breeding."
+  },
+  "breeding": {
+    "canBreed": true,
+    "breedingType": "livebearer",
+    "maturityHours": 480,
+    "gestationOrIncubationHours": 72,
+    "offspringRange": {
+      "min": 5,
+      "max": 25
+    },
+    "traitPools": ["color", "tail-shape", "pattern"],
+    "hybridizationGroup": "guppy"
+  },
+  "economy": {
+    "basePurchasePrice": 18,
+    "baseSalePrice": 10,
+    "upkeepPerDay": 0.6
+  },
+  "assets": {
+    "modelMetadataId": "guppy-default",
+    "icon": "guppy.png"
+  }
+}

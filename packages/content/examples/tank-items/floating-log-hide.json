@@ -1,0 +1,58 @@
+{
+  "id": "floating-log-hide",
+  "displayName": "Floating Log Hide",
+  "description": "A floating shelter that gives surface-dwelling fish a place to rest and claim territory.",
+  "category": "decoration",
+  "tags": ["betta-friendly", "surface", "cover", "hideout"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "free-floating",
+    "footprint": {
+      "widthUnits": 2,
+      "depthUnits": 1,
+      "heightUnits": 1
+    }
+  },
+  "availability": {
+    "modes": ["career", "sandbox"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1"]
+  },
+  "effects": {
+    "visualThemeTags": ["natural", "wood", "surface-cover"],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 6
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "territorial-surface-fish",
+        "modifier": 8
+      },
+      {
+        "tag": "betta-friendly",
+        "modifier": 10
+      }
+    ],
+    "behaviorModifiers": [
+      {
+        "targetTags": ["territorial-surface-fish"],
+        "effect": "reduce-stress",
+        "strength": 5,
+        "notes": "Provides cover and a defensible perch for solitary territorial fish."
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 60,
+    "salePrice": 30,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/floating-log-hide.glb",
+    "thumbnailPath": "assets/models/items/floating-log-hide.png"
+  }
+}

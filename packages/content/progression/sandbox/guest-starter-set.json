@@ -1,0 +1,40 @@
+{
+  "id": "sandbox-guest-starter-set",
+  "mode": "sandbox",
+  "targetType": "bundle",
+  "targetId": "sandbox-guest-starter-set",
+  "unlockType": "default",
+  "requirements": {
+    "requiredAccountTier": "guest",
+    "notes": "Starter content exposed to anonymous sandbox users."
+  },
+  "rewards": {
+    "fishSpeciesIds": [
+      "betta-splendens",
+      "guppy",
+      "neon-tetra",
+      "corydoras-panda"
+    ],
+    "tankItemIds": [
+      "basic-sponge-filter",
+      "basic-tropical-heater",
+      "floating-log-hide",
+      "river-rock-cluster",
+      "java-fern",
+      "fine-gravel-brown"
+    ],
+    "featureFlags": [
+      "guest-sandbox-single-tank",
+      "built-in-backdrop-picker",
+      "top-down-placement-mode"
+    ]
+  },
+  "visibility": {
+    "showInCatalogBeforeUnlock": false,
+    "showUnlockHint": false,
+    "hiddenUntilEligible": false
+  },
+  "monetization": {
+    "isGuestUpgradePrompt": true
+  }
+}

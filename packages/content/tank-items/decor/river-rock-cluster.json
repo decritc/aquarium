@@ -1,0 +1,57 @@
+{
+  "id": "river-rock-cluster",
+  "displayName": "River Rock Cluster",
+  "description": "A heavy rock formation that anchors the tank layout and creates shelter near the bottom.",
+  "category": "decoration",
+  "tags": ["natural", "rocks", "shelter", "heavy"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "bottom",
+    "placementBehavior": "heavy",
+    "footprint": {
+      "widthUnits": 3,
+      "depthUnits": 2,
+      "heightUnits": 2
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1", "sandbox-starter-layouts"]
+  },
+  "effects": {
+    "visualThemeTags": ["natural", "riverbed", "hardscape"],
+    "cleanliness": [
+      {
+        "metric": "algae-growth",
+        "modifier": 1
+      }
+    ],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 3
+      },
+      {
+        "stat": "prestige",
+        "modifier": 2
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "bottom-dweller",
+        "modifier": 3
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 45,
+    "salePrice": 20,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/river-rock-cluster.glb",
+    "thumbnailPath": "assets/models/items/river-rock-cluster.png"
+  }
+}

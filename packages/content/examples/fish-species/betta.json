@@ -1,0 +1,106 @@
+{
+  "id": "betta-splendens",
+  "displayName": "Betta",
+  "scientificName": "Betta splendens",
+  "classification": {
+    "environment": "freshwater",
+    "climate": "tropical",
+    "speciesGroup": "labyrinth-fish",
+    "rarityTier": "common"
+  },
+  "habitat": {
+    "minimumTankSizeGallons": 5,
+    "temperatureCelsius": {
+      "min": 24,
+      "max": 28
+    },
+    "phRange": {
+      "min": 6.5,
+      "max": 7.5
+    },
+    "salinityPpt": {
+      "min": 0,
+      "max": 1
+    },
+    "waterFlow": "low",
+    "tankZone": ["surface", "upper"],
+    "minimumGroupSize": 1,
+    "maximumGroupSize": 1,
+    "territorialSpaceGallons": 5,
+    "hardscapePreferences": ["plants", "driftwood", "open-swim-space"]
+  },
+  "compatibility": {
+    "temperament": "semi-aggressive",
+    "communitySuitability": "situational",
+    "withSameSpecies": "solitary",
+    "compatibleSpeciesIds": ["corydoras-panda", "neon-tetra"],
+    "incompatibleSpeciesIds": ["betta-splendens", "serpae-tetra"],
+    "incompatibleTraits": [
+      {
+        "trait": "long-fins",
+        "reason": "Display-oriented aggression can be triggered by similar silhouettes."
+      },
+      {
+        "trait": "surface-dweller",
+        "reason": "Competing for the same upper-zone territory raises stress and aggression."
+      }
+    ],
+    "notes": "Best kept alone or with carefully chosen peaceful tropical community fish."
+  },
+  "behavior": {
+    "activityLevel": "moderate",
+    "swimSpeed": "medium",
+    "schooling": "none",
+    "territoriality": "high",
+    "aggressionTriggers": [
+      "same-species-males",
+      "crowded-tank",
+      "shared-surface-zone",
+      "resource-competition"
+    ],
+    "responseProfile": {
+      "defaultState": "territorial",
+      "states": [
+        {
+          "when": "same species male enters line of sight",
+          "behavior": "chase",
+          "intensity": "high",
+          "notes": "Male bettas should visibly defend territory against other males."
+        },
+        {
+          "when": "another fish occupies the same surface resting zone",
+          "behavior": "flare",
+          "intensity": "medium",
+          "notes": "Visual threat display should happen before prolonged conflict."
+        },
+        {
+          "when": "tank has insufficient cover or feels crowded",
+          "behavior": "hover-territory",
+          "intensity": "medium"
+        }
+      ]
+    },
+    "feedingStyle": "surface"
+  },
+  "breeding": {
+    "canBreed": true,
+    "breedingType": "egg-layer",
+    "maturityHours": 1440,
+    "gestationOrIncubationHours": 48,
+    "offspringRange": {
+      "min": 20,
+      "max": 80
+    },
+    "traitPools": ["color", "fin-shape", "pattern"],
+    "hybridizationGroup": "betta"
+  },
+  "economy": {
+    "basePurchasePrice": 45,
+    "baseSalePrice": 28,
+    "upkeepPerDay": 2
+  },
+  "assets": {
+    "modelMetadataId": "betta-splendens-default",
+    "icon": "betta-splendens.png"
+  }
+}

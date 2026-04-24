@@ -1,0 +1,345 @@
+# Founder Decisions
+
+This document captures the current design direction based on the founder's answers
+to the initial product questionnaire. Future agents should treat these as the
+default assumptions unless a later document supersedes them.
+
+## Resolved decisions
+
+### 1. Primary fantasy is mode-dependent
+
+The game supports multiple player fantasies, and the dominant fantasy changes by
+mode:
+
+- **Sandbox mode** emphasizes relaxing aquarium creation
+- **Observer mode** emphasizes social showcase and discovery
+- **Career mode** emphasizes breeding strategy and tycoon progression
+
+This means design, UX, progression, and monetization should all be mode-aware.
+
+### 2. Tank ownership is mode-dependent
+
+- **Guest sandbox without an account**: one aquarium with a curated asset set
+- **Paid upgrade path for sandbox users**: more assets and more tanks
+- **Career mode**: multiple aquariums are allowed, but the main constraint is
+  limited capital rather than a hard one-tank cap
+
+Players should be able to choose whether to invest in beautiful showcase tanks or
+run a lean breeder-focused setup.
+
+### 3. Observer mode should include social actions
+
+The intended social feature set includes:
+
+- viewing public aquariums
+- likes/favorites
+- follows
+- comments
+- curated/featured showcases
+
+Rollout intent:
+
+- the **first implementation** should ship with viewing plus likes/favorites only
+- follows and comments should be added in later milestones once public-tank usage
+  and observer demand justify the extra social complexity
+
+### 4. Difficulty should be adaptive
+
+The game should use an **AI director** or adaptive challenge layer that tries to
+keep the experience fun, challenging, and recoverable.
+
+Design intent:
+
+- casual players should not be driven into frustrating failure states
+- experienced breeders should still feel meaningful realism and challenge
+- the system should adapt to player skill and play style over time
+
+### 5. Neglect consequences should follow the adaptive challenge model
+
+Fish care penalties should be governed by the same adaptive philosophy as the
+director system rather than a fixed global punishment rule.
+
+Implication:
+
+- the game should avoid making players go broke or lose everything too easily
+- consequence severity may vary by context, tank condition, player behavior, or
+  future difficulty settings
+
+### 6. Core balance is also play-style dependent
+
+The game should support multiple player archetypes:
+
+- creative decorators and showcase players
+- strategy-heavy breeders
+- economy-minded optimizers
+- social/community-oriented players
+
+The default target is a balanced mix, but systems should not assume every player
+has the same motivation.
+
+### 7. Premium acceleration should stay light
+
+Monetization should be conservative and sustainable:
+
+- primary monetization should center on cosmetics, ad removal, and convenience
+- optional purchases of in-game money are acceptable for career progression
+- pricing should account for infrastructure and database/storage costs
+- the business model should be able to scale sustainably if the game grows
+
+### 8. Species realism target
+
+Fish behavior and care requirements should be **semi-realistic**:
+
+- grounded in real aquarium logic
+- simplified enough to remain readable and fun
+
+### 9. Breeding depth plan
+
+Breeding should **start simple and expand later**.
+
+Recommended rollout:
+
+1. readable inheritance and trait pools
+2. stronger authored rules and lineages
+3. deeper simulation only after the basics are fun
+
+### 10. Hybridization rules
+
+Hybridization should generally stay realistic:
+
+- allow many closely related species where appropriate
+- stick close to realism by default
+- include a few curated exceptions and discoverable easter egg fish
+
+### 11. Pedigree visibility
+
+Fish should have full lineages/pedigrees available for deep-dive players, but
+pedigree should not dominate the default UI flow.
+
+Design implication:
+
+- surface simple lineage information in normal play
+- provide an easy-to-find advanced pedigree view for collectors and breeders
+
+### 12. Public visibility defaults
+
+Aquariums should be **private by default**.
+
+Players may explicitly choose to make tanks public through the UI.
+
+Definition:
+
+- **public** means the tank is observable by other users through observer-facing
+  surfaces
+- sharing links and featuring/discovery can be layered on top of that public
+  state
+
+### 13. Public aquarium discovery
+
+Public tanks should be discoverable through:
+
+- owner search
+- tags/themes
+- fish species
+- popularity/featured ranking
+
+### 14. Live content direction
+
+For now, plan for **seasonal decorations only** rather than a heavy live-ops
+calendar.
+
+### 15. Platform priority
+
+The project should target **desktop web first**.
+
+### 16. Technical architecture preference
+
+The project should use a **TypeScript monorepo**, but the architecture should not
+assume every performance-sensitive system remains in TypeScript forever.
+
+Notes:
+
+- frontend rendering may eventually use WASM for hotspots
+- backend services may later move some workloads to faster runtimes if necessary
+
+### 17. Offline progression
+
+Offline progression should use a **hybrid model**:
+
+- simplified catch-up while offline
+- more detailed simulation only for the most important systems
+
+### 18. Fish asset format
+
+Fish models are expected to arrive primarily as **GLB** assets.
+
+The current likely modeling workflow involves **Meshy AI** as an upstream asset
+source.
+
+### 19. UI tone should be playful and cozy
+
+The interface should feel closer to a friendly life-sim UI than a technical
+operations dashboard.
+
+Design intent:
+
+- rounded, readable, welcoming shapes
+- playful but polished visual treatment
+- calm color language that supports long passive viewing sessions
+- avoid heavy enterprise-style control panels as the default presentation
+
+The target mood is relaxing, comfortable, and "good vibes" forward rather than
+high-stress management first.
+
+### 20. Players should choose their AI director style
+
+The adaptive challenge system should not be a single invisible difficulty layer.
+Players should be able to choose a director/profile much like a storyteller
+system in colony sims.
+
+Implication:
+
+- relaxed players can choose a laid-back, beauty-first, low-stress experience
+- career-minded players can choose a balanced progression experience
+- extreme players can choose a more demanding, challenge-heavy profile
+
+### 21. Observer presentation must be low-obstruction
+
+Observer mode should prioritize tank viewing over management surfaces.
+
+Implication:
+
+- owner-only gauges and tools should not appear in observer mode
+- public viewers should not see career-management overlays such as pH gauges,
+  water temperature tools, or private fish-care diagnostics
+- observer mode should feel suitable for passive ambient watching or
+  "screensaver-like" viewing
+
+### 22. Career tools are owner-facing, not audience-facing
+
+Career mode may expose management aids to the player, including:
+
+- pH and temperature indicators
+- observable fish health summaries
+- compatibility warnings
+- maintenance and breeding guidance
+
+Those tools exist for the owner/operator of the tank and should be hidden or
+significantly reduced when the same tank is viewed publicly.
+
+### 23. Landing-page quality and SEO are top-tier priorities
+
+The public-facing landing page should be treated as a first-class product surface,
+not an afterthought.
+
+Design intent:
+
+- premium visual quality comparable to leading polished creative-tech product sites
+- strong first impression with art direction, motion, and clear value proposition
+- avoid generic, low-effort, or "AI slop" presentation
+- support serious SEO so discovery can happen through search as well as social sharing
+
+Implication:
+
+- landing-page craftsmanship must be part of the core web product plan
+- marketing surfaces should be content-rich, indexable, and visually intentional
+
+### 24. Browser performance is a non-negotiable quality bar
+
+The game should feel smooth and premium in a browser, not like a compromised
+desktop port or a skipping prototype.
+
+Design intent:
+
+- fish should move fluidly and continuously
+- rendering should avoid visible stutter or teleport-like motion
+- browser delivery should still aim for high production quality
+- future implementation should aggressively budget rendering, simulation, and asset delivery
+
+Implication:
+
+- performance work is part of the core architecture, not a late optimization pass
+- rendering and simulation choices must respect browser constraints from the start
+
+### 25. Brand mark direction should be hybrid, not single-motif
+
+The primary brand mark should lean toward a **balanced hybrid of fish + tank/water**
+rather than a pure fish silhouette or a generic abstract wave.
+
+Design intent:
+
+- connect the aquarium fantasy and the product identity in one mark
+- stay simple and legible at favicon/app-icon sizes
+- feel premium, calm, and memorable
+
+Implication:
+
+- logo exploration should prioritize hybrid concepts first
+- avoid drifting into generic wave marks or overly detailed fish illustrations
+
+### 26. Logo emphasis should be fish-forward with aquarium framing support
+
+Within that hybrid approach, the mark should emphasize the **fish silhouette first**,
+with the **curved tank-glass frame** acting as the strongest supporting cue.
+
+Design intent:
+
+- the fish should carry the emotional recognition
+- the tank-glass cue should make the icon feel unmistakably aquarium-specific
+- avoid over-relying on generic ripple/wave symbolism
+
+### 27. Small-size icon read should favor tail and motion
+
+At favicon/app-icon scale, the mark should emphasize the **fish tail / motion
+silhouette** more strongly than a static fish head or body mass.
+
+Design intent:
+
+- keep the icon elegant and dynamic at small sizes
+- preserve the feeling of a living aquarium rather than a static mascot
+- pair naturally with the curved tank-glass support cue
+- improve memorability through motion-driven shape language
+
+### 28. Wordmark should be rounded and custom, not generic
+
+The wordmark should use a **clean rounded base with subtle custom aquarium
+character**.
+
+Design intent:
+
+- maintain strong readability in headers and marketing use
+- feel premium and friendly rather than default-system or purely decorative
+- add just enough custom detail to feel ownable and brand-specific
+- avoid drifting into novelty cartoon lettering or hard-tech typography
+
+### 29. Brand palette should be aqua/teal dominant with coral secondary
+
+The core palette should lean primarily on **aqua/teal** with **coral** as the
+main secondary accent.
+
+Design intent:
+
+- reinforce the living-aquarium fantasy immediately
+- keep the interface calming and aquatic first
+- allow warmth and premium contrast through selective coral accents
+- avoid palettes that feel either too cold/clinical or too loud/gacha-like
+
+## Key implementation implications
+
+1. Build the product around distinct mode entry points rather than one unified
+   progression path.
+2. Keep fish and content data-driven so new species can be added by dropping in
+   a model and metadata JSON.
+3. Treat adaptive difficulty as a first-class system rather than a late tuning
+   pass.
+4. Treat director/profile selection as part of the player-facing UX rather than
+   a hidden tuning detail.
+5. Design social systems with moderation, privacy, and observer-safe
+   presentation from the beginning.
+6. Treat landing-page quality, SEO, and browser performance as core product
+   requirements rather than polish.
+7. Treat "public" as meaning "observable by others," and expand observer
+   discoverability once there is enough public content density to justify it.
+8. Keep the guest sandbox library small but satisfying so the free experience feels
+   premium without forcing early content sprawl.
+9. Keep the premium model sustainable without making the experience feel paywalled.

@@ -1,0 +1,28 @@
+{
+  "id": "career-freshwater-tier-1",
+  "mode": "career",
+  "targetType": "bundle",
+  "targetId": "career-freshwater-tier-1-bundle",
+  "unlockType": "default",
+  "requirements": {
+    "minimumPlayerLevel": 1,
+    "requiredAccountTier": "free",
+    "notes": "Starter freshwater species and basic equipment for new breeders."
+  },
+  "rewards": {
+    "fishSpeciesIds": ["betta-splendens", "neon-tetra"],
+    "tankItemIds": ["tropical-heater-basic", "floating-log-hide"],
+    "featureFlags": ["career-market-board"],
+    "currencies": [
+      {
+        "currencyId": "credits",
+        "amount": 250
+      }
+    ]
+  },
+  "visibility": {
+    "showInCatalogBeforeUnlock": true,
+    "showUnlockHint": true,
+    "hiddenUntilEligible": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "riverbank-plants",
+  "displayName": "Riverbank Plants",
+  "description": "A natural planted riverbank backdrop for tropical freshwater displays.",
+  "sourceType": "built-in",
+  "themeTags": ["natural", "planted", "freshwater", "community"],
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "allowPublicUse": true,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "imagePath": "assets/backdrops/riverbank-plants.png",
+    "focalPoint": "center",
+    "recommendedTankThemes": ["planted", "community", "freshwater-tropical"],
+    "supportsColorTint": true
+  }
+}

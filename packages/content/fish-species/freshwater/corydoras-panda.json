@@ -1,0 +1,101 @@
+{
+  "id": "corydoras-panda",
+  "displayName": "Panda Corydoras",
+  "scientificName": "Corydoras panda",
+  "classification": {
+    "environment": "freshwater",
+    "climate": "tropical",
+    "speciesGroup": "corydoras",
+    "rarityTier": "common"
+  },
+  "habitat": {
+    "minimumTankSizeGallons": 10,
+    "temperatureCelsius": {
+      "min": 22,
+      "max": 26
+    },
+    "phRange": {
+      "min": 6.2,
+      "max": 7.5
+    },
+    "salinityPpt": {
+      "min": 0,
+      "max": 1
+    },
+    "waterFlow": "low",
+    "tankZone": ["bottom", "lower"],
+    "minimumGroupSize": 4,
+    "maximumGroupSize": 10,
+    "territorialSpaceGallons": 1,
+    "hardscapePreferences": ["sand", "plants", "driftwood", "open-swim-space"]
+  },
+  "compatibility": {
+    "temperament": "peaceful",
+    "communitySuitability": "excellent",
+    "withSameSpecies": "schooling",
+    "compatibleSpeciesIds": ["guppy", "neon-tetra", "otocinclus-affinis"],
+    "incompatibleSpeciesIds": [],
+    "incompatibleTraits": [
+      {
+        "trait": "territorial",
+        "reason": "Persistent bottom harassment should reduce comfort and feeding activity."
+      }
+    ],
+    "notes": "Peaceful bottom-dweller that works best in small groups with soft substrate."
+  },
+  "behavior": {
+    "activityLevel": "moderate",
+    "swimSpeed": "slow",
+    "schooling": "loose",
+    "territoriality": "low",
+    "aggressionTriggers": [],
+    "responseProfile": {
+      "defaultState": "calm",
+      "states": [
+        {
+          "when": "substrate is harsh or the group is too small",
+          "behavior": "hide",
+          "intensity": "medium",
+          "notes": "Bottom dwellers should become less active in poor conditions."
+        }
+      ]
+    },
+    "feedingStyle": "bottom"
+  },
+  "ecosystem": {
+    "roles": ["cleanup-crew", "bottom-scavenger"],
+    "contributions": [
+      {
+        "type": "detritus-reduction",
+        "strength": "medium",
+        "notes": "Helps reduce waste accumulation on the substrate."
+      },
+      {
+        "type": "leftover-food-reduction",
+        "strength": "medium",
+        "notes": "Finds uneaten food that sinks to the bottom."
+      }
+    ],
+    "maintenanceNotes": "Supports cleanliness but does not replace manual gravel cleaning."
+  },
+  "breeding": {
+    "canBreed": true,
+    "breedingType": "egg-layer",
+    "maturityHours": 960,
+    "gestationOrIncubationHours": 72,
+    "offspringRange": {
+      "min": 8,
+      "max": 30
+    },
+    "traitPools": ["mask-shape", "hardiness", "pattern-contrast"]
+  },
+  "economy": {
+    "basePurchasePrice": 20,
+    "baseSalePrice": 11,
+    "upkeepPerDay": 0.75
+  },
+  "assets": {
+    "modelMetadataId": "corydoras-panda-default",
+    "icon": "corydoras-panda.png"
+  }
+}

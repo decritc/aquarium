@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/fish-model.schema.json",
+  "title": "FishModelMetadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "speciesDefinitionId", "displayName", "sources", "modelFiles", "animationClips"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "speciesDefinitionId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "scientificName": {
+      "type": "string"
+    },
+    "variantKey": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["freshwater", "saltwater", "brackish", "fantasy"]
+    },
+    "speciesGroup": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modelAuthor"],
+      "properties": {
+        "modelAuthor": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "modelFiles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene"],
+      "properties": {
+        "scene": { "type": "string" },
+        "previewImage": { "type": "string" },
+        "materialsDirectory": { "type": "string" }
+      }
+    },
+    "animationClips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "loop", "purpose"],
+        "properties": {
+          "name": { "type": "string" },
+          "loop": { "type": "boolean" },
+          "purpose": {
+            "type": "string",
+            "enum": [
+              "idle",
+              "cruise",
+              "turn-left",
+              "turn-right",
+              "feed",
+              "courtship",
+              "threat-display",
+              "rest",
+              "attack",
+              "custom"
+            ]
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "renderHints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "approximateLengthMeters": {
+          "type": "number",
+          "minimum": 0
+        },
+        "defaultCruiseAnimation": {
+          "type": "string"
+        },
+        "turnLeftAnimation": {
+          "type": "string"
+        },
+        "turnRightAnimation": {
+          "type": "string"
+        },
+        "preferredSwimZone": {
+          "type": "string",
+          "enum": ["surface", "top", "mid", "bottom", "all"]
+        },
+        "minSchoolSpacingMeters": {
+          "type": "number",
+          "minimum": 0
+        },
+        "silhouetteTags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

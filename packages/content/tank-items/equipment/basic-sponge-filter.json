@@ -1,0 +1,61 @@
+{
+  "id": "basic-sponge-filter",
+  "displayName": "Basic Sponge Filter",
+  "description": "A simple low-flow filter suitable for gentle freshwater starter tanks.",
+  "category": "equipment",
+  "tags": ["starter", "filter", "low-flow"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "equipment-slot",
+    "placementBehavior": "mounted",
+    "footprint": {
+      "widthUnits": 1,
+      "depthUnits": 1,
+      "heightUnits": 2
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1", "sandbox-starter-tanks"]
+  },
+  "effects": {
+    "tankStats": [
+      {
+        "stat": "water-clarity",
+        "modifier": 6
+      },
+      {
+        "stat": "oxygenation",
+        "modifier": 4
+      }
+    ],
+    "cleanliness": [
+      {
+        "metric": "detritus-buildup",
+        "modifier": -4
+      },
+      {
+        "metric": "maintenance-load",
+        "modifier": -2
+      }
+    ],
+    "environmentRanges": [
+      {
+        "metric": "water-flow",
+        "operation": "add",
+        "value": 1
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 70,
+    "salePrice": 35,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "modelPath": "assets/models/items/basic-sponge-filter.glb",
+    "thumbnailPath": "assets/models/items/basic-sponge-filter.png"
+  }
+}

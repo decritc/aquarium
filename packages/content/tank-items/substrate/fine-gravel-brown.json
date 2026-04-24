@@ -1,0 +1,52 @@
+{
+  "id": "fine-gravel-brown",
+  "displayName": "Fine Brown Gravel",
+  "description": "A versatile gravel substrate suited to general tropical freshwater tanks.",
+  "category": "substrate",
+  "tags": ["starter", "freshwater", "gravel", "community"],
+  "placement": {
+    "allowedTankEnvironments": ["freshwater-tropical", "freshwater-planted"],
+    "surface": "bottom",
+    "placementBehavior": "free-place",
+    "footprint": {
+      "widthUnits": 12,
+      "depthUnits": 8,
+      "heightUnits": 0.5
+    }
+  },
+  "availability": {
+    "modes": ["sandbox", "career"],
+    "guestSandboxAvailable": true,
+    "requiresAccount": false,
+    "unlockIds": ["career-freshwater-tier-1", "sandbox-starter-tanks"]
+  },
+  "effects": {
+    "visualThemeTags": ["natural", "neutral", "freshwater"],
+    "cleanliness": [
+      {
+        "metric": "detritus-buildup",
+        "modifier": 1
+      }
+    ],
+    "tankStats": [
+      {
+        "stat": "comfort",
+        "modifier": 2
+      }
+    ],
+    "speciesAffinities": [
+      {
+        "tag": "bottom-dweller",
+        "modifier": 2
+      }
+    ]
+  },
+  "economy": {
+    "purchasePrice": 18,
+    "salePrice": 9,
+    "premiumOnly": false
+  },
+  "rendering": {
+    "thumbnailPath": "assets/textures/substrate/fine-gravel-brown.png"
+  }
+}
