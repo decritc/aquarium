@@ -272,6 +272,7 @@ That means featured showcase assets should favor:
 - a **betta-led hero composition**
 - a framing balance where the **whole tank composition reads first** while the betta
   still holds the clearest focal emphasis
+- a **graceful hover/display pose** for the betta rather than a generic cruising read
 - a **soft blue gradient studio backdrop** as the first backdrop choice
  - **planted dark soil** as the default showcase substrate
 - elegant planted compositions

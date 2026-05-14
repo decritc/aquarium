@@ -120,6 +120,18 @@ The asset should be produced with or designed for these clips:
    - minimal drift
    - useful for surface rest and calm display moments
 
+## Preferred first marketing pose
+
+For the first premium showcase stills and poster frames, prefer a **graceful
+hover/display pose**:
+
+- body mostly side-on
+- fins opened enough to show the silhouette clearly
+- calm poised posture rather than aggressive flaring
+- elegant stillness with subtle life
+
+This should feel like a premium display fish moment, not a fast swim pass.
+
 ## Behavioral feel reference
 
 This fish is:
