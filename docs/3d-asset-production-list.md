@@ -270,6 +270,7 @@ The first major marketing mood should be:
 That means featured showcase assets should favor:
 
 - a **betta-led hero composition**
+- a **betta-only display scene** rather than a mixed-species showcase
 - a framing balance where the **whole tank composition reads first** while the betta
   still holds the clearest focal emphasis
 - a **graceful hover/display pose** for the betta rather than a generic cruising read

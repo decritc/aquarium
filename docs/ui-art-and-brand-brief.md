@@ -408,6 +408,7 @@ Preferred first hero fish:
 - prefer a graceful hover/display pose for the first hero still rather than a
   fast cruising motion
 - build the composition around one elegant centerpiece fish rather than a busy school
+- keep the showcase tank **betta-only** for the first flagship visual
 - let plant structure and hardscape support the betta instead of competing with it
 
 Preferred first framing balance:

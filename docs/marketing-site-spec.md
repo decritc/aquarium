@@ -112,6 +112,7 @@ Preferred hero-fish direction for the first implementation:
 - lead with a **betta** as the primary visual hero
 - use the fish as the focal point inside a calm planted composition
 - favor a graceful hover/display read for the hero still rather than a generic swim-by
+- prefer a betta-only display composition for the first flagship hero scene
 - avoid making the first hero rely on a busy school or multi-species chaos
 
 Preferred first implementation format:
